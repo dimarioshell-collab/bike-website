@@ -262,6 +262,11 @@ nav {
   flex-wrap: wrap;
 }
 
+.hero-image{
+  width: 900px;
+  height: 1050px;
+}
+
 /* Кнопки — спільний стиль */
 .btn-primary {
   background: var(--color-accent);
@@ -778,7 +783,7 @@ section {
   transform: scale(1.05);
 }
 .video-wrapper {
-      max-width: 800px;
+      max-width: 100%;
       margin: 40px auto;
       position: relative;
       border-radius: 16px;
@@ -855,19 +860,7 @@ section {
   letter-spacing: 2px;
 }
 
-/* Постійна мітка */
-.work-always-label {
-  position: absolute;
-  top: 16px; left: 16px;
-  background: rgba(10, 10, 10, 0.8);
-  border: 1px solid var(--color-border);
-  font-size: 10px;
-  font-family: var(--font-mono);
-  color: var(--color-muted);
-  letter-spacing: 1px;
-  padding: 5px 10px;
-  z-index: 3;
-}
+
 
 .works-cta {
   text-align: center;

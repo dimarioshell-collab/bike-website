@@ -57,7 +57,7 @@
 
       <!-- ГОЛОВНИЙ ЗАГОЛОВОК — змінюйте текст -->
       <h1 class="hero-title">
-        DIMARIO<br />
+        DIMARIO<br/>
         <span class="accent">BIKE</span><br />
         <span class="outline">MASTER</span>
       </h1>
@@ -105,8 +105,7 @@
       <div class="hero-grid-lines"></div>
       <div class="hero-accent-bar"></div>
       <div class="hero-photo-placeholder">
-        <span class="photo-icon">🚴</span>
-        <!-- ЗАМІНІТЬ ЦЕЙ БЛОК НА СВІЙ <img> -->
+        <img  class="hero-image" src="images/Me Kona.jpg" alt="Me Kona">
       </div>
       <div class="hero-overlay-text">BIKE</div>
     </div>
@@ -148,7 +147,7 @@
     <div class="section-header fade-up">
       <div>
         <span class="section-num">ПОСЛУГИ</span>
-        <h2 class="section-title">ЩО Я<br />РОБЛЮ</h2>
+        <h2 class="section-title">ЩО Я РОБЛЮ</h2>
       </div>
       <p class="section-desc">
         Повний спектр послуг — від ідеї до готового байка у вас в руках
@@ -248,7 +247,10 @@
       <span class="section-num">ПРО МЕНЕ</span>
 
       <!-- ЗАГОЛОВОК — змінюйте -->
-      <h2>ДМИТРО,<br />BIKE MASTER</h2>
+      <h2 class="hero-title">ДМИТРО, 
+        <span class="accent">BIKE</span> 
+        <span class="outline">MASTER</span>
+      </h2>
 
       <!-- ТЕКСТ — змінюйте на свій -->
       <p>
@@ -292,23 +294,24 @@
     <div class="section-header fade-up">
       <div>
         <span class="section-num">ПОРТФОЛІО</span>
-        <h2 class="section-title">МОЇ<br/>РОБОТИ</h2>
+        <h2 class="section-title">МОЇ РОБОТИ</h2>
       </div>
       <p class="section-desc">Реальні проекти — від бюджетних збірок до преміум-білдів</p>
     </div>
 
     <div class="works-grid">
-           <!-- КАРТКА 1 (велика, займає 2 рядки) -->
+    
       <div class="work-card work-card--large fade-up">
-        <img src="images/work1.jpg" alt="" class="work-img"/>
-      </div>
-        <span class="work-always-label">FEATURED</span>
+
+        <img src="images/Kona Supreame.jpg" alt="" class="work-img"/>
+        
         <div class="work-overlay">
           <div class="work-info">
             <!-- Змінюйте назву і характеристики -->
             <h4>MTB Freeride збірка</h4>
+
             <span>SRAM x4 · Marzocci Sport Rcv Z1 · 26"</span>
-            <img src="images/work1.jpg" alt="" class="work-img"/>
+            
           </div>
         </div>
       </div>
@@ -316,12 +319,12 @@
       <!-- КАРТКА 2 -->
       <div class="work-card fade-up">
         <div class="work-img-placeholder">
-          <span class="bike-emoji">🚴</span>
+          <img src="images/Magellan.jpg" alt="Magellan" class="work-img"/>
           <span>City Adventure</span>
         </div>
         <div class="work-overlay">
           <div class="work-info">
-            <img src="images/Magellan.jpg" alt="Magellan" class="work-img"/>
+            
             <h4>Dirt</h4>
             <span>Sram x4 · 26'</span>
           </div>
@@ -331,7 +334,7 @@
       <!-- КАРТКА 3 -->
       <div class="work-card fade-up">
         <div class="work-img-placeholder">
-          <span class="bike-emoji">🏙️</span>
+          <video id="myVideo" src="images/Spesialized big hit.mp4" preload="metadata"></video>
           <span>Extreme style</span>
         </div>
         <div class="work-overlay">
@@ -340,7 +343,7 @@
             <span>Spesialized Big hit3 - Sramx4 -27,5'</span>
          <div class="video-wrapper" id="videoBox">
     <!-- poster="обложка.jpg" - покажет картинку до запуска -->
-        <video id="myVideo" src="images/Spesialized big hit.mp4" preload="metadata"></video>
+        
         <button class="play-btn" id="playBtn">▶️</button>
          </video>
          </div>
@@ -351,18 +354,32 @@
       <!-- КАРТКА 4 -->
       <div class="work-card fade-up">
         <div class="work-img-placeholder">
-          <span class="bike-emoji">⚡</span>
+          <img src="images/Fatbike.jpg" alt="Fatbike" class="work-img img-fat"/>
           <span>Trail Hardtail</span>
         </div>
         <div class="work-overlay">
           <div class="work-info">
-            <img src="images/Fatbike.jpg" alt="Fatbike" class="work-img img-fat"/>
+            
             <h4>Fatbike Hardtail</h4>
             <span>Deore 8sp · 26'</span>
           </div>
         </div>
       </div>
-                    <!-- + Додайте більше карток копіюючи блок вище -->
+    </div>
+
+    <div class="work-card fade-up">
+        <div class="work-img-placeholder">
+          <img src="images/" alt="Fatbike" class="work-img img-fat"/>
+          <span>Mtb Hardtail</span>
+        </div>
+        <div class="work-overlay">
+          <div class="work-info">
+            
+            <h4>Fatbike Hardtail</h4>
+            <span>Acera 8sp · 26'</span>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="works-cta">
@@ -380,7 +397,7 @@
     <div class="section-header fade-up">
       <div>
         <span class="section-num">ЯК ЦЕ ПРАЦЮЄ</span>
-        <h2 class="section-title">ПРОЦЕС<br />ЗБІРКИ</h2>
+        <h2 class="section-title">ПРОЦЕС ЗБІРКИ</h2>
       </div>
       <p class="section-desc">Прозоро і зрозуміло від першого слова до готового байка</p>
     </div>
@@ -435,7 +452,7 @@
     <div class="section-header fade-up">
       <div>
         <span class="section-num">ЦІНИ</span>
-        <h2 class="section-title">ВАРТІСТЬ<br />ПОСЛУГ</h2>
+        <h2 class="section-title">ВАРТІСТЬ ПОСЛУГ</h2>
       </div>
       <p class="section-desc">Чесні ціни без прихованих доплат</p>
     </div>
@@ -518,7 +535,7 @@
     <div class="section-header fade-up">
       <div>
         <span class="section-num">06 — ВІДГУКИ</span>
-        <h2 class="section-title">ЩО<br />КАЖУТЬ</h2>
+        <h2 class="section-title">ЩО КАЖУТЬ</h2>
       </div>
       <p class="section-desc">Реальні люди, реальні байки</p>
     </div>
