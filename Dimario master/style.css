@@ -265,7 +265,7 @@ nav {
 .hero-image{
   width: 100%;
   max-width: 900px;
-  height: auto;
+  height: 920px;
   object-fit: contain;
 }
 
@@ -576,7 +576,6 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
-  align-items: center;
   padding: 100px 48px;
   background: var(--color-black);
 }
@@ -655,6 +654,11 @@ section {
   line-height: 1;
 }
 
+.about-content{
+  display: flex;
+  flex-direction: column;
+}
+
 /* Права частина — текст */
 .about-content h2 {
   font-family: var(--font-display);
@@ -683,12 +687,19 @@ section {
   border-left: 3px solid var(--color-accent);
   background: var(--color-panel);
   display: flex;
-  align-items: center;
+  align-items: stretch;
   gap: 20px;
+  flex-grow: 1;
 }
 
 .cert-icon {
   font-size: 28px;
+}
+
+.cert-text{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .cert-text strong {
@@ -706,21 +717,22 @@ section {
 .cert-img{
   display: flex;
   gap: 5px;
-  width: 100%;
-  max-width: 300px;
   margin-top: 12px;
+  flex-grow: 1;
 }
 .cert-img img {
   width: 100%;
-  height: auto;
-  max-height: 200px;
+  height: 100%;
+  max-height: 100%;
   object-fit: contain;
   flex: 1;
 }
 .cert-img__veliki{
  padding: auto, 20px 0;
 }
-
+.cert-img__wrapper{
+  flex-grow: 1;
+}
 /* ================================================================
    10. РОБОТИ / ПОРТФОЛІО
    ================================================================ */
