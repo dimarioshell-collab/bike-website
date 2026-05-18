@@ -752,7 +752,7 @@ section {
   overflow: hidden;
   aspect-ratio: 4 / 3;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   border-radius: 18px;
 }
 
@@ -870,6 +870,7 @@ section {
   align-items: flex-end;
   padding: 28px;
   z-index: 2;
+  pointer-events: none;
 }
 
 .work-card:hover .work-overlay {
