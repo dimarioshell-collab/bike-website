@@ -1,670 +1,682 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uk">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dimario Bike Master — Авторська збірка велосипедів</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dimario Bike Master — Авторська збірка велосипедів</title>
 
-  <!-- ============================================================
+    <!-- ============================================================
        ШРИФТИ (Google Fonts) — можна змінити за бажанням
        ============================================================ -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@300;400;500;600;700&family=Space+Mono:ital@0;1&display=swap"
-    rel="stylesheet"
-  />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@300;400;500;600;700&family=Space+Mono:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Підключення стилів -->
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-  <!-- ============================================================
+    <!-- Підключення стилів -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ============================================================
        КАСТОМНИЙ КУРСОР (тільки десктоп)
        ============================================================ -->
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-ring" id="cursorRing"></div>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
 
-
-  <!-- ============================================================
+    <!-- ============================================================
        НАВІГАЦІЯ
        ============================================================ -->
-  <nav id="navbar">
-    <!-- ЛОГОТИП — змініть текст за бажанням -->
-    <div class="nav-logo">DIMARIO BIKES</div>
+    <nav id="navbar">
+      <!-- ЛОГОТИП — змініть текст за бажанням -->
+      <div class="nav-logo">DIMARIO BIKES</div>
 
-    <!-- ПОСИЛАННЯ МЕНЮ — змінюйте назви та href -->
-    <ul class="nav-links">
-      <li><a href="#services">Послуги</a></li>      
-      <li><a href="#about">Про мене</a></li>
-      <li><a href="#works">Роботи</a></li>
-      <li><a href="#process">Процес</a></li>
-      <li><a href="#pricing">Ціни</a></li>
-    </ul>
-    <a href="https://t.me/+YOs8HjJgr9hkMWZi" class="nav-cta" target="_blank">
-      Замовити
-    </a>
-  </nav>
+      <!-- ПОСИЛАННЯ МЕНЮ — змінюйте назви та href -->
+      <ul class="nav-links">
+        <li><a href="#services">Послуги</a></li>
+        <li><a href="#about">Про мене</a></li>
+        <li><a href="#works">Роботи</a></li>
+        <li><a href="#process">Процес</a></li>
+        <li><a href="#pricing">Ціни</a></li>
+      </ul>
+      <a href="https://t.me/+YOs8HjJgr9hkMWZi" class="nav-cta" target="_blank">
+        Замовити
+      </a>
+    </nav>
 
-
-  <!-- ============================================================
+    <!-- ============================================================
        HERO — головна секція
        ============================================================ -->
-  <section class="hero" id="hero">
+    <section class="hero" id="hero">
+      <div class="hero-left">
+        <!-- Підзаголовок над заголовком -->
+        <div class="hero-tag">Авторська збірка велосипедів</div>
 
-    <div class="hero-left">
-      <!-- Підзаголовок над заголовком -->
-      <div class="hero-tag">Авторська збірка велосипедів</div>
+        <!-- ГОЛОВНИЙ ЗАГОЛОВОК — змінюйте текст -->
+        <h1 class="hero-title">
+          DIMARIO<br />
+          <span class="accent">BIKE</span><br />
+          <span class="outline">MASTER</span>
+        </h1>
 
-      <!-- ГОЛОВНИЙ ЗАГОЛОВОК — змінюйте текст -->
-      <h1 class="hero-title">
-        DIMARIO<br/>
-        <span class="accent">BIKE</span><br />
-        <span class="outline">MASTER</span>
-      </h1>
+        <!-- ОПИС — замініть на свій текст -->
+        <p class="hero-desc">
+          Збираю велосипеди <strong>під вас</strong> — під ваш стиль їзди, тіло,
+          бюджет і мрію. Онлайн-консультація + готовий список запчастин. Жодної
+          зайвої деталі, тільки те, що справді потрібно.
+        </p>
 
-      <!-- ОПИС — замініть на свій текст -->
-      <p class="hero-desc">
-        Збираю велосипеди <strong>під вас</strong> — під ваш стиль їзди, тіло,
-        бюджет і мрію. Онлайн-консультація + готовий список запчастин.
-        Жодної зайвої деталі, тільки те, що справді потрібно.
-      </p>
+        <div class="hero-btns">
+          <!-- КНОПКИ — замініть href -->
+          <a
+            href="https://t.me/+YOs8HjJgr9hkMWZi"
+            class="btn-primary"
+            target="_blank"
+          >
+            Написати в Telegram →
+          </a>
+          <a href="#works" class="btn-secondary"> Дивитись роботи </a>
+        </div>
 
-      <div class="hero-btns">
-        <!-- КНОПКИ — замініть href -->
-        <a href="https://t.me/+YOs8HjJgr9hkMWZi" class="btn-primary" target="_blank">
-          Написати в Telegram →
-        </a>
-        <a href="#works" class="btn-secondary">
-          Дивитись роботи
-        </a>
+        <!-- СТАТИСТИКА — змінюйте цифри -->
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-num">10+</div>
+            <div class="stat-label">Зібраних байків</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">100%</div>
+            <div class="stat-label">Онлайн-формат</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">UA</div>
+            <div class="stat-label">По всій Україні</div>
+          </div>
+        </div>
       </div>
 
-      <!-- СТАТИСТИКА — змінюйте цифри -->
-      <div class="hero-stats">
-        <div class="stat">
-          <div class="stat-num">10+</div>
-          <div class="stat-label">Зібраних байків</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num">100%</div>
-          <div class="stat-label">Онлайн-формат</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num">UA</div>
-          <div class="stat-label">По всій Україні</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ПРАВА ЧАСТИНА HERO —
+      <!-- ПРАВА ЧАСТИНА HERO —
          Щоб додати фото: замініть <div class="hero-photo-placeholder"> на:
          <img src="images/hero-bike.jpg" alt="Hero bike" class="hero-img" />
          і в style.css додайте .hero-img { width:100%; height:100%; object-fit:cover; }
     -->
-    <div class="hero-right">
-      <div class="hero-grid-lines"></div>
-      <div class="hero-accent-bar"></div>
-      <div class="hero-photo-placeholder">
-        <img  class="hero-image" src="images/Me Kona.jpg" alt="Me Kona">
+      <div class="hero-right">
+        <div class="hero-grid-lines"></div>
+        <div class="hero-accent-bar"></div>
+        <div class="hero-photo-placeholder">
+          <img class="hero-image" src="images/Me Kona.jpg" alt="Me Kona" />
+        </div>
+        <div class="hero-overlay-text">BIKE</div>
       </div>
-      <div class="hero-overlay-text">BIKE</div>
-    </div>
+    </section>
 
-  </section>
-
-
-  <!-- ============================================================
+    <!-- ============================================================
        БІГУЧИЙ РЯДОК — змінюйте тексти в .marquee-item
        ============================================================ -->
-  <div class="marquee-wrap">
-    <div class="marquee-track">
-      <!-- Текст повторюється двічі для безперервної анімації -->
-      <span class="marquee-item">MTB збірка</span>
-      <span class="marquee-item">Гравель</span>
-      <span class="marquee-item">Шосейний</span>
-      <span class="marquee-item">Міський</span>
-      <span class="marquee-item">Онлайн-консультація</span>
-      <span class="marquee-item">Підбір компонентів</span>
-      <span class="marquee-item">Сертифікований механік</span>
-      <span class="marquee-item">Велопланета</span>
-      <!-- Дублікат для безшовного loop -->
-      <span class="marquee-item">MTB збірка</span>
-      <span class="marquee-item">Гравель</span>
-      <span class="marquee-item">Шосейний</span>
-      <span class="marquee-item">Міський</span>
-      <span class="marquee-item">Онлайн-консультація</span>
-      <span class="marquee-item">Підбір компонентів</span>
-      <span class="marquee-item">Сертифікований механік</span>
-      <span class="marquee-item">Велопланета</span>
+    <div class="marquee-wrap">
+      <div class="marquee-track">
+        <!-- Текст повторюється двічі для безперервної анімації -->
+        <span class="marquee-item">MTB збірка</span>
+        <span class="marquee-item">Гравель</span>
+        <span class="marquee-item">Шосейний</span>
+        <span class="marquee-item">Міський</span>
+        <span class="marquee-item">Онлайн-консультація</span>
+        <span class="marquee-item">Підбір компонентів</span>
+        <span class="marquee-item">Сертифікований механік</span>
+        <span class="marquee-item">Велопланета</span>
+        <!-- Дублікат для безшовного loop -->
+        <span class="marquee-item">MTB збірка</span>
+        <span class="marquee-item">Гравель</span>
+        <span class="marquee-item">Шосейний</span>
+        <span class="marquee-item">Міський</span>
+        <span class="marquee-item">Онлайн-консультація</span>
+        <span class="marquee-item">Підбір компонентів</span>
+        <span class="marquee-item">Сертифікований механік</span>
+        <span class="marquee-item">Велопланета</span>
+      </div>
     </div>
-  </div>
 
-
-  <!-- ============================================================
+    <!-- ============================================================
        ПОСЛУГИ
        ============================================================ -->
-  <section class="services" id="services">
-    <div class="section-header fade-up">
-      <div>
-        <span class="section-num">ПОСЛУГИ</span>
-        <h2 class="section-title">ЩО Я РОБЛЮ</h2>
-      </div>
-      <p class="section-desc">
-        Повний спектр послуг — від ідеї до готового байка у вас в руках
-      </p>
-    </div>
-
-    <div class="services-grid">
-
-      <!-- КАРТКА ПОСЛУГИ — дублюйте/змінюйте скільки завгодно -->
-      <div class="service-card fade-up">
-        <span class="service-icon">🔧</span>
-        <span class="service-num">01</span>
-        <h3>Авторська збірка</h3>
-        <p>
-          Складаю індивідуальний байк з нуля. Підбираю раму, вилку, трансмісію,
-          гальма — кожну деталь окремо, під ваш стиль, вагу, геометрію та цілі.
+    <section class="services" id="services">
+      <div class="section-header fade-up">
+        <div>
+          <span class="section-num">ПОСЛУГИ</span>
+          <h2 class="section-title">ЩО Я РОБЛЮ</h2>
+        </div>
+        <p class="section-desc">
+          Повний спектр послуг — від ідеї до готового байка у вас в руках
         </p>
-        <span class="service-tag">Ключова послуга</span>
       </div>
 
-      <div class="service-card fade-up">
-        <span class="service-icon">💬</span>
-        <span class="service-num">02</span>
-        <h3>Онлайн-консультація</h3>
-        <p>
-          Відповім на всі питання про вибір велосипеда, апгрейд деталей,
-          особливості різних стилів їзди. Простою мовою, без зайвого жаргону.
-        </p>
-        <span class="service-tag">Популярно</span>
+      <div class="services-grid">
+        <!-- КАРТКА ПОСЛУГИ — дублюйте/змінюйте скільки завгодно -->
+        <div class="service-card fade-up">
+          <span class="service-icon">🔧</span>
+          <span class="service-num">01</span>
+          <h3>Авторська збірка</h3>
+          <p>
+            Складаю індивідуальний байк з нуля. Підбираю раму, вилку,
+            трансмісію, гальма — кожну деталь окремо, під ваш стиль, вагу,
+            геометрію та цілі.
+          </p>
+          <span class="service-tag">Ключова послуга</span>
+        </div>
+
+        <div class="service-card fade-up">
+          <span class="service-icon">💬</span>
+          <span class="service-num">02</span>
+          <h3>Онлайн-консультація</h3>
+          <p>
+            Відповім на всі питання про вибір велосипеда, апгрейд деталей,
+            особливості різних стилів їзди. Простою мовою, без зайвого жаргону.
+          </p>
+          <span class="service-tag">Популярно</span>
+        </div>
+
+        <div class="service-card fade-up">
+          <span class="service-icon">📋</span>
+          <span class="service-num">03</span>
+          <h3>Підбір компонентів</h3>
+          <p>
+            Готовий список запчастин під ваш бюджет з посиланнями на магазини.
+            Ви просто замовляєте — а я вже все продумав за вас.
+          </p>
+          <span class="service-tag">Зручно</span>
+        </div>
+
+        <div class="service-card fade-up">
+          <span class="service-icon">⬆️</span>
+          <span class="service-num">04</span>
+          <h3>Апгрейд байка</h3>
+          <p>
+            Хочете покращити поточний велосипед? Підкажу, що варто міняти, а що
+            ні. Визначу слабкі місця та порекомендую оптимальні заміни.
+          </p>
+          <span class="service-tag">Економно</span>
+        </div>
+
+        <div class="service-card fade-up">
+          <span class="service-icon">🎯</span>
+          <span class="service-num">05</span>
+          <h3>Байк під задачу</h3>
+          <p>
+            МТБ для ендуро, гравель для подорожей, міський для щоденних поїздок
+            — підберу оптимальний байк під конкретний тип їзди та маршрути.
+          </p>
+          <span class="service-tag">Персонально</span>
+        </div>
+
+        <div class="service-card fade-up">
+          <span class="service-icon">🔍</span>
+          <span class="service-num">06</span>
+          <h3>Аудит покупки</h3>
+          <p>
+            Хочете купити б/у велосипед? Надішліть фото та опис — проаналізую
+            стан, ціну, потенційні проблеми. Захищу від невдалої покупки.
+          </p>
+          <span class="service-tag">Безпечно</span>
+        </div>
       </div>
+    </section>
 
-      <div class="service-card fade-up">
-        <span class="service-icon">📋</span>
-        <span class="service-num">03</span>
-        <h3>Підбір компонентів</h3>
-        <p>
-          Готовий список запчастин під ваш бюджет з посиланнями на магазини.
-          Ви просто замовляєте — а я вже все продумав за вас.
-        </p>
-        <span class="service-tag">Зручно</span>
-      </div>
-
-      <div class="service-card fade-up">
-        <span class="service-icon">⬆️</span>
-        <span class="service-num">04</span>
-        <h3>Апгрейд байка</h3>
-        <p>
-          Хочете покращити поточний велосипед? Підкажу, що варто міняти, а що ні.
-          Визначу слабкі місця та порекомендую оптимальні заміни.
-        </p>
-        <span class="service-tag">Економно</span>
-      </div>
-
-      <div class="service-card fade-up">
-        <span class="service-icon">🎯</span>
-        <span class="service-num">05</span>
-        <h3>Байк під задачу</h3>
-        <p>
-          МТБ для ендуро, гравель для подорожей, міський для щоденних поїздок —
-          підберу оптимальний байк під конкретний тип їзди та маршрути.
-        </p>
-        <span class="service-tag">Персонально</span>
-      </div>
-
-      <div class="service-card fade-up">
-        <span class="service-icon">🔍</span>
-        <span class="service-num">06</span>
-        <h3>Аудит покупки</h3>
-        <p>
-          Хочете купити б/у велосипед? Надішліть фото та опис — проаналізую
-          стан, ціну, потенційні проблеми. Захищу від невдалої покупки.
-        </p>
-        <span class="service-tag">Безпечно</span>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ============================================================
+    <!-- ============================================================
        ПРО МЕНЕ
        ============================================================ -->
-  <section class="about" id="about">
-
-    <div class="about-visual fade-up">
-      <div class="about-corner"></div>
-        <img src="images/me dirt .jpg" alt="me dirt.jpg" class="about-photo" />
+    <section class="about" id="about">
+      <div class="about-visual fade-up">
+        <div class="about-corner">
+          <img
+            src="images/me dirt .jpg"
+            alt="me dirt.jpg"
+            class="about-photo"
+          />
+        </div>
       </div>
-    </div>
 
-    <div class="about-content fade-up">
-      <span class="section-num">ПРО МЕНЕ</span>
+      <div class="about-content fade-up">
+        <span class="section-num">ПРО МЕНЕ</span>
 
-      <!-- ЗАГОЛОВОК — змінюйте -->
-      <h2 class="hero-title">ДМИТРО, 
-        <span class="accent">BIKE</span> 
-        <span class="outline">MASTER</span>
-      </h2>
+        <!-- ЗАГОЛОВОК — змінюйте -->
+        <h2 class="hero-title">
+          ДМИТРО,
+          <span class="accent">BIKE</span>
+          <span class="outline">MASTER</span>
+        </h2>
 
-      <!-- ТЕКСТ — змінюйте на свій -->
-      <p>
-        Я захоплююся велосипедами не як хобі — а як справжнє ремесло.
-        Кожен байк, який я збираю, це не просто набір деталей, а
-        <strong>"Велосипед мрiя" під конкретну людину</strong>.
-      </p>
-      <p>
-        Пройшов <strong>курси веломеханіка у Велопланеті, а також у Veliki.ua
-        </strong> — одній з
-        найкращих веломайстерень України. Знаю, як все влаштовано зсередини:
-        від геометрії рами до налаштування підвіски.
-      </p>
-      <p>
-        Практикую <strong>дистанційну роботу</strong> — навiть з будь-якого куточка
-        України, я допомагаю вам зібрати ідеальний байк без зайвих витрат на
-        посередників.
-      </p>
+        <!-- ТЕКСТ — змінюйте на свій -->
+        <p>
+          Я захоплююся велосипедами не як хобі — а як справжнє ремесло. Кожен
+          байк, який я збираю, це не просто набір деталей, а
+          <strong>"Велосипед мрiя" під конкретну людину</strong>.
+        </p>
+        <p>
+          Пройшов
+          <strong
+            >курси веломеханіка у Велопланеті, а також у Veliki.ua
+          </strong>
+          — одній з найкращих веломайстерень України. Знаю, як все влаштовано
+          зсередини: від геометрії рами до налаштування підвіски.
+        </p>
+        <p>
+          Практикую <strong>дистанційну роботу</strong> — навiть з будь-якого
+          куточка України, я допомагаю вам зібрати ідеальний байк без зайвих
+          витрат на посередників.
+        </p>
 
-      <!-- БЛОК СЕРТИФІКАТУ — змінюйте текст -->
-      <div class="cert-block">
-        <div class="cert-icon">🎓</div>
-        <div class="cert-text">
-          <strong>Сертифікований веломеханік</strong>
-          <span>Велопланета · Курси веломеханіка - Veliki.ua</span>
-          <div class="cert-img">
-            <div class="cert-img__wrapper">
-              <img src="images/BikePlanet.jpg" alt="BikePlanet">
-            </div>
-            <div class="cert-img__wrapper">
-              <img class="cert-img__veliki" src="images/Veliki.ua.jpg" alt="Veliki">
+        <!-- БЛОК СЕРТИФІКАТУ — змінюйте текст -->
+        <div class="cert-block">
+          <div class="cert-icon">🎓</div>
+          <div class="cert-text">
+            <strong>Сертифікований веломеханік</strong>
+            <span>Велопланета · Курси веломеханіка - Veliki.ua</span>
+            <div class="cert-img">
+              <div class="cert-img__wrapper">
+                <img src="images/BikePlanet.jpg" alt="BikePlanet" />
+              </div>
+              <div class="cert-img__wrapper">
+                <img
+                  class="cert-img__veliki"
+                  src="images/Veliki.ua.jpg"
+                  alt="Veliki"
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-  </section>
-
-
-  <!-- ============================================================
+    <!-- ============================================================
        РОБОТИ / ПОРТФОЛІО
        ============================================================ -->
-  <section class="works" id="works">
-    <div class="section-header fade-up">
-      <div>
-        <span class="section-num">ПОРТФОЛІО</span>
-        <h2 class="section-title">МОЇ РОБОТИ</h2>
-      </div>
-      <p class="section-desc">Реальні проекти — від бюджетних збірок до преміум-білдів</p>
-    </div>
-
-    <div class="works-grid">
-    
-      <div class="work-card work-card--large fade-up">
-
-        <div class="video-wrapper" id="videoBox">
-
-               <video id="myVideo" src="images/Spesialized big hit.mp4" preload="metadata"></video>
-              <button class="play-btn" id="playBtn">▶️</button>
-             
+    <section class="works" id="works">
+      <div class="section-header fade-up">
+        <div>
+          <span class="section-num">ПОРТФОЛІО</span>
+          <h2 class="section-title">МОЇ РОБОТИ</h2>
         </div>
-        
-        <div class="work-overlay">
-          <div class="work-info">
-            <!-- Змінюйте назву і характеристики -->
-             <h4>MTB donwhill</h4>
+        <p class="section-desc">
+          Реальні проекти — від бюджетних збірок до преміум-білдів
+        </p>
+      </div>
+
+      <div class="works-grid">
+        <div class="work-card work-card--large fade-up">
+          <div class="video-wrapper" id="videoBox">
+            <video
+              id="myVideo"
+              src="images/Spesialized big hit.mp4"
+              preload="metadata"
+            ></video>
+            <button class="play-btn" id="playBtn">▶️</button>
+          </div>
+
+          <div class="work-overlay">
+            <div class="work-info">
+              <!-- Змінюйте назву і характеристики -->
+              <h4>MTB donwhill</h4>
               <span>Spesialized Big hit3 - Sramx4 -27,5'</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- КАРТКА 2 -->
+        <div class="work-card fade-up">
+          <div class="work-img-placeholder">
+            <img src="images/Magellan.jpg" alt="Magellan" class="work-img" />
+            <h4>City Adventure</h4>
+          </div>
+          <div class="work-overlay">
+            <div class="work-info">
+              <h4>Dirt</h4>
+              <span>Sram x4 · 26'</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- КАРТКА 3 -->
+        <div class="work-card fade-up">
+          <div class="work-img-placeholder">
+            <img
+              src="images/Kona Supreame.jpg"
+              alt=""
+              class="work-img img-kona"
+            />
+            <span>Extreme style</span>
+          </div>
+          <div class="work-overlay">
+            <div class="work-info">
+              <h4>MTB Freeride збірка</h4>
+              <span>SRAM x4 · Marzocci Sport Rcv Z1 · 26"</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- КАРТКА 4 -->
+
+        <div class="work-card fade-up">
+          <div class="work-img-placeholder">
+            <img
+              src="images/Fatbike.jpg"
+              alt="Fatbike"
+              class="work-img img-fat"
+            />
+            <span>Mtb Hardtail</span>
+          </div>
+          <div class="work-overlay">
+            <div class="work-info">
+              <h4>Fatbike Hardtail</h4>
+              <span>Acera 8sp · 26'</span>
+            </div>
+          </div>
+        </div>
+        <div class="work-card fade-up">
+          <div class="work-img-placeholder">
+            <a
+              href="https://t.me/+YOs8HjJgr9hkMWZi"
+              class="btn-secondary"
+              target="_blank"
+            >
+              Дивитись усі роботи в Telegram →
+            </a>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- КАРТКА 2 -->
-      <div class="work-card fade-up">
-        <div class="work-img-placeholder">
-          <img src="images/Magellan.jpg" alt="Magellan" class="work-img"/>
-          <h4>City Adventure</span>
-        </div>
-        <div class="work-overlay">
-          <div class="work-info">
-            
-            <h4>Dirt</h4>
-            <span>Sram x4 · 26'</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- КАРТКА 3 -->
-      <div class="work-card fade-up">
-        <div class="work-img-placeholder">
-          <img src="images/Kona Supreame.jpg" alt="" class="work-img img-kona"/>
-          <span>Extreme style</span>
-        </div>
-        <div class="work-overlay">
-          <div class="work-info">
-            <h4>MTB Freeride збірка</h4>
-            <span>SRAM x4 · Marzocci Sport Rcv Z1 · 26"</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- КАРТКА 4 -->
-     
-
-      <div class="work-card fade-up">
-        <div class="work-img-placeholder">
-          <img src="images/Fatbike.jpg" alt="Fatbike" class="work-img img-fat"/>
-          <span>Mtb Hardtail</span>
-        </div>
-        <div class="work-overlay">
-          <div class="work-info">
-            
-            <h4>Fatbike Hardtail</h4>
-            <span>Acera 8sp · 26'</span>
-          </div>
-        </div>
-      </div>
-      <div class="work-card fade-up">
-        <div class="work-img-placeholder">
-          <a href="https://t.me/+YOs8HjJgr9hkMWZi" class="btn-secondary" target="_blank">
-        Дивитись усі роботи в Telegram →
-      </a>
-        </div>
-      </div>
-    </div>
-
-    
-    
-  </section>
-
-
-  <!-- ============================================================
+    <!-- ============================================================
        ПРОЦЕС РОБОТИ
        ============================================================ -->
-  <section class="process" id="process">
-    <div class="section-header fade-up">
-      <div>
-        <span class="section-num">ЯК ЦЕ ПРАЦЮЄ</span>
-        <h2 class="section-title">ПРОЦЕС ЗБІРКИ</h2>
-      </div>
-      <p class="section-desc">Прозоро і зрозуміло від першого слова до готового байка</p>
-    </div>
-
-    <div class="process-steps">
-
-      <!-- КРОК — дублюйте та змінюйте -->
-      <div class="step fade-up">
-        <div class="step-dot"><span class="step-num">01</span></div>
-        <h3>Знайомство</h3>
-        <p>
-          Пишете мені в Telegram або дзвоните. Розповідаєте — де їздите,
-          який досвід, бюджет, мрія. Без зайвих питань.
+    <section class="process" id="process">
+      <div class="section-header fade-up">
+        <div>
+          <span class="section-num">ЯК ЦЕ ПРАЦЮЄ</span>
+          <h2 class="section-title">ПРОЦЕС ЗБІРКИ</h2>
+        </div>
+        <p class="section-desc">
+          Прозоро і зрозуміло від першого слова до готового байка
         </p>
       </div>
 
-      <div class="step fade-up">
-        <div class="step-dot"><span class="step-num">02</span></div>
-        <h3>Технічне завдання</h3>
-        <p>
-          Складаю специфікацію байка — рама, компоненти, розміри.
-          Пояснюю кожен вибір простою мовою.
-        </p>
+      <div class="process-steps">
+        <!-- КРОК — дублюйте та змінюйте -->
+        <div class="step fade-up">
+          <div class="step-dot"><span class="step-num">01</span></div>
+          <h3>Знайомство</h3>
+          <p>
+            Пишете мені в Telegram або дзвоните. Розповідаєте — де їздите, який
+            досвід, бюджет, мрія. Без зайвих питань.
+          </p>
+        </div>
+
+        <div class="step fade-up">
+          <div class="step-dot"><span class="step-num">02</span></div>
+          <h3>Технічне завдання</h3>
+          <p>
+            Складаю специфікацію байка — рама, компоненти, розміри. Пояснюю
+            кожен вибір простою мовою.
+          </p>
+        </div>
+
+        <div class="step fade-up">
+          <div class="step-dot"><span class="step-num">03</span></div>
+          <h3>Список деталей</h3>
+          <p>
+            Отримуєте повний список із посиланнями на магазини. Знаєте точно,
+            скільки і за що платите.
+          </p>
+        </div>
+
+        <div class="step fade-up">
+          <div class="step-dot"><span class="step-num">04</span></div>
+          <h3>Підтримка</h3>
+          <p>
+            Після отримання деталей — збирайте з моєю підтримкою онлайн або
+            несіть до майстерні з готовим завданням.
+          </p>
+        </div>
       </div>
+    </section>
 
-      <div class="step fade-up">
-        <div class="step-dot"><span class="step-num">03</span></div>
-        <h3>Список деталей</h3>
-        <p>
-          Отримуєте повний список із посиланнями на магазини.
-          Знаєте точно, скільки і за що платите.
-        </p>
-      </div>
-
-      <div class="step fade-up">
-        <div class="step-dot"><span class="step-num">04</span></div>
-        <h3>Підтримка</h3>
-        <p>
-          Після отримання деталей — збирайте з моєю підтримкою онлайн
-          або несіть до майстерні з готовим завданням.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ============================================================
+    <!-- ============================================================
        ЦІНИ
        ============================================================ -->
-  <section class="pricing" id="pricing">
-    <div class="section-header fade-up">
-      <div>
-        <span class="section-num">ЦІНИ</span>
-        <h2 class="section-title">ВАРТІСТЬ ПОСЛУГ</h2>
-      </div>
-      <p class="section-desc">Чесні ціни без прихованих доплат</p>
-    </div>
-
-    <div class="pricing-grid">
-
-      <!-- ЦІНОВИЙ ПЛАН 1 -->
-      <div class="price-card fade-up">
-        <span class="price-label">Базовий</span>
-        <h3 class="price-name">Консультація</h3>
-        <p class="price-desc-text">
-          Для тих, хто хоче розібратися сам і потребує правильного вектора
-        </p>
-        <!-- Змінюйте ціну -->
-        <div class="price-amount">від 300₴</div>
-        <p class="price-period">разова консультація</p>
-        <div class="price-divider"></div>
-        <ul class="price-features">
-          <li class="price-feature">До 60 хвилин спілкування</li>
-          <li class="price-feature">Відповіді на всі питання</li>
-          <li class="price-feature">Базові рекомендації</li>
-          <li class="price-feature">Telegram або дзвінок</li>
-        </ul>
-        <a href="https://t.me/+YOs8HjJgr9hkMWZi" class="price-btn" target="_blank">
-          Замовити
-        </a>
+    <section class="pricing" id="pricing">
+      <div class="section-header fade-up">
+        <div>
+          <span class="section-num">ЦІНИ</span>
+          <h2 class="section-title">ВАРТІСТЬ ПОСЛУГ</h2>
+        </div>
+        <p class="section-desc">Чесні ціни без прихованих доплат</p>
       </div>
 
-      <!-- ЦІНОВИЙ ПЛАН 2 (виділений) — клас featured -->
-      <div class="price-card price-card--featured fade-up">
-        <span class="price-label">⭐ Найпопулярніше</span>
-        <h3 class="price-name">Підбір збірки</h3>
-        <p class="price-desc-text">
-          Повна розробка специфікації вашого майбутнього байка
-        </p>
-        <div class="price-amount">від 800₴</div>
-        <p class="price-period">повна збірка під ключ</p>
-        <div class="price-divider"></div>
-        <ul class="price-features">
-          <li class="price-feature">Аналіз ваших потреб</li>
-          <li class="price-feature">Підбір усіх компонентів</li>
-          <li class="price-feature">Список із посиланнями</li>
-          <li class="price-feature">Обґрунтування кожного вибору</li>
-          <li class="price-feature">Підтримка після отримання</li>
-        </ul>
-        <a href="https://t.me/+YOs8HjJgr9hkMWZi" class="price-btn" target="_blank">
-          Замовити
-        </a>
+      <div class="pricing-grid">
+        <!-- ЦІНОВИЙ ПЛАН 1 -->
+        <div class="price-card fade-up">
+          <span class="price-label">Базовий</span>
+          <h3 class="price-name">Консультація</h3>
+          <p class="price-desc-text">
+            Для тих, хто хоче розібратися сам і потребує правильного вектора
+          </p>
+          <!-- Змінюйте ціну -->
+          <div class="price-amount">від 300₴</div>
+          <p class="price-period">разова консультація</p>
+          <div class="price-divider"></div>
+          <ul class="price-features">
+            <li class="price-feature">До 60 хвилин спілкування</li>
+            <li class="price-feature">Відповіді на всі питання</li>
+            <li class="price-feature">Базові рекомендації</li>
+            <li class="price-feature">Telegram або дзвінок</li>
+          </ul>
+          <a
+            href="https://t.me/+YOs8HjJgr9hkMWZi"
+            class="price-btn"
+            target="_blank"
+          >
+            Замовити
+          </a>
+        </div>
+
+        <!-- ЦІНОВИЙ ПЛАН 2 (виділений) — клас featured -->
+        <div class="price-card price-card--featured fade-up">
+          <span class="price-label">⭐ Найпопулярніше</span>
+          <h3 class="price-name">Підбір збірки</h3>
+          <p class="price-desc-text">
+            Повна розробка специфікації вашого майбутнього байка
+          </p>
+          <div class="price-amount">від 800₴</div>
+          <p class="price-period">повна збірка під ключ</p>
+          <div class="price-divider"></div>
+          <ul class="price-features">
+            <li class="price-feature">Аналіз ваших потреб</li>
+            <li class="price-feature">Підбір усіх компонентів</li>
+            <li class="price-feature">Список із посиланнями</li>
+            <li class="price-feature">Обґрунтування кожного вибору</li>
+            <li class="price-feature">Підтримка після отримання</li>
+          </ul>
+          <a
+            href="https://t.me/+YOs8HjJgr9hkMWZi"
+            class="price-btn"
+            target="_blank"
+          >
+            Замовити
+          </a>
+        </div>
+
+        <!-- ЦІНОВИЙ ПЛАН 3 -->
+        <div class="price-card fade-up">
+          <span class="price-label">Преміум</span>
+          <h3 class="price-name">Апгрейд</h3>
+          <p class="price-desc-text">Аудит поточного байка та план покращень</p>
+          <div class="price-amount">від 500₴</div>
+          <p class="price-period">аналіз + рекомендації</p>
+          <div class="price-divider"></div>
+          <ul class="price-features">
+            <li class="price-feature">Аналіз поточного байка</li>
+            <li class="price-feature">Слабкі місця та пріоритети</li>
+            <li class="price-feature">Список замін з бюджетом</li>
+            <li class="price-feature">Пояснення що і навіщо</li>
+          </ul>
+          <a
+            href="https://t.me/+YOs8HjJgr9hkMWZi"
+            class="price-btn"
+            target="_blank"
+          >
+            Замовити
+          </a>
+        </div>
       </div>
+    </section>
 
-      <!-- ЦІНОВИЙ ПЛАН 3 -->
-      <div class="price-card fade-up">
-        <span class="price-label">Преміум</span>
-        <h3 class="price-name">Апгрейд</h3>
-        <p class="price-desc-text">
-          Аудит поточного байка та план покращень
-        </p>
-        <div class="price-amount">від 500₴</div>
-        <p class="price-period">аналіз + рекомендації</p>
-        <div class="price-divider"></div>
-        <ul class="price-features">
-          <li class="price-feature">Аналіз поточного байка</li>
-          <li class="price-feature">Слабкі місця та пріоритети</li>
-          <li class="price-feature">Список замін з бюджетом</li>
-          <li class="price-feature">Пояснення що і навіщо</li>
-        </ul>
-        <a href="https://t.me/+YOs8HjJgr9hkMWZi" class="price-btn" target="_blank">
-          Замовити
-        </a>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ============================================================
+    <!-- ============================================================
        ВІДГУКИ
        ============================================================ -->
-  <section class="testimonials" id="testimonials">
-    <div class="section-header fade-up">
-      <div>
-        <span class="section-num">06 — ВІДГУКИ</span>
-        <h2 class="section-title">ЩО КАЖУТЬ</h2>
+    <section class="testimonials" id="testimonials">
+      <div class="section-header fade-up">
+        <div>
+          <span class="section-num">06 — ВІДГУКИ</span>
+          <h2 class="section-title">ЩО КАЖУТЬ</h2>
+        </div>
+        <p class="section-desc">Реальні люди, реальні байки</p>
       </div>
-      <p class="section-desc">Реальні люди, реальні байки</p>
-    </div>
 
-    <div class="testimonials-grid">
+      <div class="testimonials-grid">
+        <!-- ВІДГУК — дублюйте та змінюйте -->
+        <div class="testimonial-card fade-up">
+          <span class="quote-mark">"</span>
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">
+            Дмитро допоміг зібрати мій перший MTB. Я не розумівся нічого — він
+            пояснив все з нуля, підібрав деталі під мій бюджет 25к. Байк вийшов
+            крутий і саме під мій стиль.
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">👤</div>
+            <div>
+              <div class="author-name">Олексій К.</div>
+              <div class="author-role">Trail rider · Харків</div>
+            </div>
+          </div>
+        </div>
 
-      <!-- ВІДГУК — дублюйте та змінюйте -->
-      <div class="testimonial-card fade-up">
-        <span class="quote-mark">"</span>
-        <div class="stars">★★★★★</div>
-        <p class="testimonial-text">
-          Дмитро допоміг зібрати мій перший MTB. Я не розумівся нічого —
-          він пояснив все з нуля, підібрав деталі під мій бюджет 25к.
-          Байк вийшов крутий і саме під мій стиль.
-        </p>
-        <div class="testimonial-author">
-          <div class="author-avatar">👤</div>
-          <div>
-            <div class="author-name">Олексій К.</div>
-            <div class="author-role">Trail rider · Харків</div>
+        <div class="testimonial-card fade-up">
+          <span class="quote-mark">"</span>
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">
+            Хотів купити готовий велик за 15к і помилитись. Консультація з
+            Дмитром змінила все — за ті самі гроші зібрали набагато кращий байк
+            з якісними компонентами.
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">👤</div>
+            <div>
+              <div class="author-name">Роман В.</div>
+              <div class="author-role">Gravelista · Львів</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-up">
+          <span class="quote-mark">"</span>
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">
+            Звернувся за апгрейдом старого Cross-Country. Дмитро чесно сказав що
+            варто міняти, а що ні. Без зайвих витрат байк став іншою машиною.
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">👤</div>
+            <div>
+              <div class="author-name">Сергій М.</div>
+              <div class="author-role">XC rider · Київ</div>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="testimonial-card fade-up">
-        <span class="quote-mark">"</span>
-        <div class="stars">★★★★★</div>
-        <p class="testimonial-text">
-          Хотів купити готовий велик за 15к і помилитись. Консультація з
-          Дмитром змінила все — за ті самі гроші зібрали набагато кращий
-          байк з якісними компонентами.
-        </p>
-        <div class="testimonial-author">
-          <div class="author-avatar">👤</div>
-          <div>
-            <div class="author-name">Роман В.</div>
-            <div class="author-role">Gravelista · Львів</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="testimonial-card fade-up">
-        <span class="quote-mark">"</span>
-        <div class="stars">★★★★★</div>
-        <p class="testimonial-text">
-          Звернувся за апгрейдом старого Cross-Country. Дмитро чесно сказав
-          що варто міняти, а що ні. Без зайвих витрат байк став іншою машиною.
-        </p>
-        <div class="testimonial-author">
-          <div class="author-avatar">👤</div>
-          <div>
-            <div class="author-name">Сергій М.</div>
-            <div class="author-role">XC rider · Київ</div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ============================================================
+    <!-- ============================================================
        КОНТАКТИ
        ============================================================ -->
-  <section class="contact" id="contact">
-
-    <div class="contact-left">
-      <h2 class="fade-up">
-        ГОТОВІ<br />
-        <span class="accent-text">ДО СТАРТУ?</span>
-      </h2>
-      <p class="fade-up">
-        Напишіть або зателефонуйте — обговоримо ваш майбутній байк.
-        Перша консультація безкоштовна.
-      </p>
-
-      <div class="contact-methods fade-up">
-
-        <!-- Telegram — замініть href -->
-        <a href="https://t.me/+YOs8HjJgr9hkMWZi" class="contact-method" target="_blank">
-          <div class="method-icon">✈️</div>
-          <div class="method-info">
-            <strong>Telegram, WhatsApp</strong>
-            <span>Найшвидший спосіб</span>
-          </div>
-          <div class="method-arrow">→</div>
-        </a>
-
-        <!-- Телефон — замініть номер у href і в тексті -->
-        <a href="tel:+380631446701" class="contact-method">
-          <div class="method-icon">📞</div>
-          <div class="method-info">
-            <strong>+38 063 144 67 01</strong>
-            <span>Дзвінок або Viber / WA</span>
-          </div>
-          <div class="method-arrow">→</div>
-        </a>
-
-      </div>
-    </div>
-
-    <div class="contact-right">
-      <div class="contact-right-bg"></div>
-      <div class="contact-big-text">GO</div>
-      <div class="contact-card fade-up">
-        <span class="big-emoji">🚴‍♂️</span>
-        <h3>DIMARIO<br />BIKE MASTER</h3>
-        <p>
-          Твій ідеальний велосипед — це не мрія.<br />
-          Це специфікація і правильний підбір деталей.
+    <section class="contact" id="contact">
+      <div class="contact-left">
+        <h2 class="fade-up">
+          ГОТОВІ<br />
+          <span class="accent-text">ДО СТАРТУ?</span>
+        </h2>
+        <p class="fade-up">
+          Напишіть або зателефонуйте — обговоримо ваш майбутній байк. Перша
+          консультація безкоштовна.
         </p>
-        <button>
-        <a href="https://www.instagram.com/@dimariobike/" target="_blank" rel="noopener noreferrer">
-                ✈️ Написати в Instagram
+
+        <div class="contact-methods fade-up">
+          <!-- Telegram — замініть href -->
+          <a
+            href="https://t.me/+YOs8HjJgr9hkMWZi"
+            class="contact-method"
+            target="_blank"
+          >
+            <div class="method-icon">✈️</div>
+            <div class="method-info">
+              <strong>Telegram, WhatsApp</strong>
+              <span>Найшвидший спосіб</span>
+            </div>
+            <div class="method-arrow">→</div>
           </a>
-        </button>
+
+          <!-- Телефон — замініть номер у href і в тексті -->
+          <a href="tel:+380631446701" class="contact-method">
+            <div class="method-icon">📞</div>
+            <div class="method-info">
+              <strong>+38 063 144 67 01</strong>
+              <span>Дзвінок або Viber / WA</span>
+            </div>
+            <div class="method-arrow">→</div>
+          </a>
+        </div>
       </div>
-    </div>
 
-  </section>
+      <div class="contact-right">
+        <div class="contact-right-bg"></div>
+        <div class="contact-big-text">GO</div>
+        <div class="contact-card fade-up">
+          <span class="big-emoji">🚴‍♂️</span>
+          <h3>DIMARIO<br />BIKE MASTER</h3>
+          <p>
+            Твій ідеальний велосипед — це не мрія.<br />
+            Це специфікація і правильний підбір деталей.
+          </p>
+          <button>
+            <a
+              href="https://www.instagram.com/@dimariobike/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ✈️ Написати в Instagram
+            </a>
+          </button>
+        </div>
+      </div>
+    </section>
 
-
-  <!-- ============================================================
+    <!-- ============================================================
        ФУТЕР
        ============================================================ -->
-  <footer>
-    <div class="footer-logo">DIMARIO BIKE</div>
-    <div class="footer-copy">© 2024 · Авторська збірка велосипедів</div>
-    <div class="footer-links">
-      <a href="https://t.me/+YOs8HjJgr9hkMWZi" target="_blank">Telegram</a>
-      <a href="tel:+380631446701">063 144 67 01</a>
-      <a href="#services">Послуги</a>
-    </div>
-  </footer>
+    <footer>
+      <div class="footer-logo">DIMARIO BIKE</div>
+      <div class="footer-copy">© 2024 · Авторська збірка велосипедів</div>
+      <div class="footer-links">
+        <a href="https://t.me/+YOs8HjJgr9hkMWZi" target="_blank">Telegram</a>
+        <a href="tel:+380631446701">063 144 67 01</a>
+        <a href="#services">Послуги</a>
+      </div>
+    </footer>
 
-
-  <!-- Підключення скриптів — завжди в кінці body -->
-  <script src="script.js">
-    const video = document.getElementById('myVideo');
-    const wrapper = document.getElementById('videoBox');
-    const btn = document.getElementById('playBtn');
-  </script>
-  
-</body>
+    <!-- Підключення скриптів — завжди в кінці body -->
+    <script src="script.js">
+      const video = document.getElementById('myVideo');
+      const wrapper = document.getElementById('videoBox');
+      const btn = document.getElementById('playBtn');
+    </script>
+  </body>
 </html>
