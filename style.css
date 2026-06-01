@@ -27,19 +27,19 @@
    ================================================================ */
 :root {
   /* Основні кольори */
-  --color-black:   #0a0a0a;   /* фон сторінки */
-  --color-dark:    #111214;   /* фон секцій */
-  --color-panel:   #161819;   /* фон карток */
-  --color-card:    #13151a;   /* фон карток послуг */
-  --color-border:  #222527;   /* колір рамок */
+  --color-black:   #0f0800;   /* фон сторінки */
+  --color-dark:    #1a1000;   /* фон секцій */
+  --color-panel:   #201400;   /* фон карток */
+  --color-card:    #261800;   /* фон карток послуг */
+  --color-border:  rgba(255, 149, 0, 0.18);   /* колір рамок */
 
   /* Акцентний колір — змінюйте на будь-який */
-  --color-accent:  #e8ff47;   /* жовто-зелений */
-  --color-accent2: #ff6b35;   /* помаранчевий (резервний) */
+  --color-accent:  #ff9500;   /* ендуро-помаранчевий */
+  --color-accent2: #ffb340;   /* світліший помаранчевий (резервний) */
 
   /* Текст */
-  --color-white:   #f4f2ed;   /* основний текст */
-  --color-muted:   #6b7075;   /* другорядний текст */
+  --color-white:   #fff8ee;   /* основний текст */
+  --color-muted:   #c8953a;   /* другорядний текст */
 
   /* Шрифти */
   --font-display: 'Bebas Neue', sans-serif;   /* заголовки */
@@ -179,7 +179,7 @@ nav {
 }
 
 .nav-cta:hover {
-  background: #d4eb30;
+  background: #ffb340;
   transform: translateY(-1px);
 }
 
@@ -285,7 +285,7 @@ nav {
 }
 
 .btn-primary:hover {
-  background: #d4eb30;
+  background: #ffb340;
   transform: translateY(-2px);
 }
 
@@ -345,8 +345,8 @@ nav {
   inset: 0;
   pointer-events: none;
   background-image:
-    linear-gradient(rgba(232, 255, 71, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(232, 255, 71, 0.04) 1px, transparent 1px);
+    linear-gradient(rgba(255, 149, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 149, 0, 0.05) 1px, transparent 1px);
   background-size: 60px 60px;
 }
 
@@ -394,7 +394,7 @@ nav {
   font-size: 120px;
   line-height: 1;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(232, 255, 71, 0.08);
+  -webkit-text-stroke: 1px rgba(255, 149, 0, 0.08);
   user-select: none;
   pointer-events: none;
 }
@@ -770,7 +770,7 @@ section {
   align-items: center;
   justify-content: center;
   gap: 12px;
-  background: linear-gradient(135deg, #13151a, #1a1e24);
+  background: linear-gradient(135deg, #1a1000, #261800);
 }
 
 .work-img-placeholder .bike-emoji {
@@ -1253,7 +1253,7 @@ section {
 
 .contact-method:hover {
   border-color: var(--color-accent);
-  background: rgba(232, 255, 71, 0.05);
+  background: rgba(255, 149, 0, 0.05);
 }
 
 .method-icon {
@@ -1307,7 +1307,7 @@ section {
 .contact-right-bg {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 30% 50%, rgba(232, 255, 71, 0.06) 0%, transparent 60%);
+  background: radial-gradient(ellipse at 30% 50%, rgba(255, 149, 0, 0.08) 0%, transparent 60%);
 }
 
 .contact-big-text {
@@ -1366,7 +1366,7 @@ section {
 }
 
 .telegram-btn:hover {
-  background: #d4eb30;
+  background: #ffb340;
   transform: translateY(-2px);
 }
 button{
