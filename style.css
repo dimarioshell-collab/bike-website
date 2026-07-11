@@ -543,16 +543,17 @@ section {
 
 .service-card h3 {
   font-family: var(--font-display);
-  font-size: 28px;
+  font-size: 30px;
   letter-spacing: 1px;
   margin-bottom: 16px;
   line-height: 1;
+  color: greenyellow;
 }
 
 .service-card p {
-  font-size: 14px;
+  font-size: 22px;
   line-height: 1.75;
-  color: #7a8290;
+  color: rgb(233, 223, 221);
 }
 
 /* Тег-мітка внизу картки */
@@ -804,9 +805,7 @@ section {
 .img-fat{
   width: 150%;
 }
-.img-kona{
 
-}
 
 .work-card:hover .work-img {
   transform: scale(1.05);
