@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bike-web.freebizmgmt.ru/sitemap.xml
+Sitemap: https://dimarioshell-collab.github.io/bike-website/sitemap.xml
