@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bike-web.freebizmgmt.ru/sitemap.xml
