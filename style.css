@@ -168,8 +168,8 @@ section {
 .about-visual,
 .hero-photo-placeholder {
   position: relative;
+  /* убрать height, если задан */
 }
-
 .service-card::before,
 .service-card::after,
 .price-card::before,
@@ -512,12 +512,11 @@ section {
 }
 
 .hero-image {
+  position: static; /* не absolute */
   width: 100%;
   height: auto;
   display: block;
-  filter: grayscale(15%) contrast(1.05);
 }
-
 .hero-overlay-text {
   position: absolute;
   bottom: -34px;
