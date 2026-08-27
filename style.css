@@ -15,9 +15,9 @@
   --text: #edeae2;
   --text-dim: #8d95a3;
   --text-faint: #575f6b;
-  --accent: #ff6a1f;
-  --accent-dim: #b3491a;
-  --accent-ink: #ffc53d;
+  --accent: #2ecc71;
+  --accent-dim: #1f7a46;
+  --accent-ink: #8be6a8;
 
   /* type */
   --f-display: "Bebas Neue", "Arial Narrow", sans-serif;
@@ -515,7 +515,10 @@ section {
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* или contain, смотря что нужно */
+  /* contain = вся фотография видна целиком, ничего не обрезается.
+     Фон .hero-photo-placeholder (var(--bg-panel)) закрывает поля по бокам/сверху-снизу,
+     если пропорции рамки и фото не совпадают. */
+  object-fit: contain;
 }
 .hero-overlay-text {
   position: absolute;
