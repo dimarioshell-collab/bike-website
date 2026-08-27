@@ -168,7 +168,7 @@ section {
 .about-visual,
 .hero-photo-placeholder {
   position: relative;
-  /* убрать height, если задан */
+  height: 60vh; /* или любое другое явное значение: px, vh, aspect-ratio */
 }
 .service-card::before,
 .service-card::after,
@@ -484,8 +484,7 @@ section {
 .hero-grid-lines {
   position: absolute;
   inset: -20px;
-  background-image:
-    linear-gradient(var(--line) 1px, transparent 1px),
+  background-image: linear-gradient(var(--line) 1px, transparent 1px),
     linear-gradient(90deg, var(--line) 1px, transparent 1px);
   background-size: 24px 24px;
   opacity: 0.5;
@@ -512,10 +511,11 @@ section {
 }
 
 .hero-image {
-  position: static; /* не absolute */
+  position: absolute;
+  inset: 0;
   width: 100%;
-  height: auto;
-  display: block;
+  height: 100%;
+  object-fit: cover; /* или contain, смотря что нужно */
 }
 .hero-overlay-text {
   position: absolute;
