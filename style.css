@@ -513,8 +513,8 @@ section {
 
 .hero-image {
   width: 100%;
-  hight: 100%;
-  object-fit: cover;
+  height: auto;
+  display: block;
   filter: grayscale(15%) contrast(1.05);
 }
 
