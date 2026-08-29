@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8" />
+<title>Demo — Dimario Bike Master chat widget</title>
+<link
+  href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@300;400;500;600;700&family=Space+Mono:ital@0;1&display=swap"
+  rel="stylesheet"
+/>
+<style>
+  :root {
+    --bg: #12151a;
+    --bg-panel: #1b2027;
+    --bg-panel-2: #20262e;
+    --line: #2c333c;
+    --line-soft: #232932;
+    --text: #edeae2;
+    --text-dim: #8d95a3;
+    --text-faint: #575f6b;
+    --accent: #2ecc71;
+    --accent-dim: #1f7a46;
+    --accent-ink: #8be6a8;
+    --f-display: "Bebas Neue", "Arial Narrow", sans-serif;
+    --f-body: "Manrope", -apple-system, "Segoe UI", sans-serif;
+    --f-mono: "Space Mono", "Courier New", monospace;
+    --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--f-body);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+  }
+  h1 { font-family: var(--f-display); text-transform: uppercase; font-size: 44px; letter-spacing: 0.02em; }
+  p { color: var(--text-dim); max-width: 480px; margin: 0 auto; }
+</style>
+<link rel="stylesheet" href="chatbot.css" />
+</head>
+<body>
+  <div>
+    <h1>Dimario Bike Master</h1>
+    <p>Демо-сторінка для перевірки чат-віджета. Натисніть кнопку 💬 у правому нижньому куті.</p>
+  </div>
+  <script src="chatbot.js"></script>
+</body>
+</html>
