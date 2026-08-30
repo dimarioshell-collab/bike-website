@@ -7,7 +7,7 @@
 
 .dbm-chat {
   position: fixed;
-  right: 20px;
+  left: 20px;
   bottom: 20px;
   z-index: 9999;
   font-family: var(--f-body, "Manrope", -apple-system, "Segoe UI", sans-serif);
