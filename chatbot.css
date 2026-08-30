@@ -65,7 +65,7 @@
 /* ---------- вікно чату ---------- */
 .dbm-chat-window {
   position: absolute;
-  right: 0;
+  left: 0;
   bottom: 76px;
   width: 360px;
   max-width: calc(100vw - 40px);
