@@ -4,6 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Конструктор велосипеда на замовлення — Dimario Bike Master</title>
+<meta name="description" content="Онлайн-конструктор велосипеда під замовлення: оберіть раму, колеса, трансмісію, гальма й колір, миттєво побачте кошторис і надішліть заявку майстру Dimario Bike Master.">
+<meta name="keywords" content="конструктор велосипеда, збірка велосипеда під замовлення, кастомний велосипед, підбір компонентів велосипеда, Dimario Bike Master">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Dimario Bike Master">
+<link rel="canonical" href="https://dimarioshell-collab.github.io/bike-website/constructor.html">
+<meta property="og:title" content="Конструктор велосипеда на замовлення — Dimario Bike Master">
+<meta property="og:description" content="Зберіть велосипед вузол за вузлом і надішліть заявку майстру: рама, колеса, трансмісія, гальма, кермо, сідло, колір.">
+<meta property="og:image" content="https://dimarioshell-collab.github.io/bike-website/images/Me%20Kona.jpg">
+<meta property="og:url" content="https://dimarioshell-collab.github.io/bike-website/constructor.html">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Конструктор велосипеда на замовлення — Dimario Bike Master">
+<meta name="twitter:description" content="Зберіть велосипед вузол за вузлом і надішліть заявку майстру.">
+<meta name="twitter:image" content="https://dimarioshell-collab.github.io/bike-website/images/Me%20Kona.jpg">
 <link rel="stylesheet" href="chatbot.css">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&family=Space+Mono&display=swap');
@@ -44,6 +58,21 @@
       linear-gradient(90deg, var(--line-soft) 1px, transparent 1px);
     background-size: 34px 34px;
     background-attachment: fixed;
+  }
+
+  /* decorative forest/mountain silhouettes in the side margins on wide screens */
+  @media (min-width: 1500px) {
+    body{
+      background-image:
+        linear-gradient(var(--line-soft) 1px, transparent 1px),
+        linear-gradient(90deg, var(--line-soft) 1px, transparent 1px),
+        url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgOTAwIj48cG9seWdvbiBmaWxsPSIjMjMyYzM2IiBvcGFjaXR5PSIwLjU1IiBwb2ludHM9IjAsOTAwIDAsNTYwIDQwLDUwMCA4NSw1NDUgMTMwLDQ3MCAxNzUsNTIwIDIyMCw0NTUgMjYwLDUwNSAzMDAsNDYwIDMwMCw5MDAiIC8+PHBvbHlnb24gZmlsbD0iIzFiMjAyNyIgb3BhY2l0eT0iMC43NSIgcG9pbnRzPSIwLDkwMCAwLDY1MCA1NSw1ODAgMTAwLDYzMCAxNTAsNTQ1IDIwNSw2MTAgMjU1LDU2NSAzMDAsNjEwIDMwMCw5MDAiIC8+PHBvbHlnb24gZmlsbD0iIzE2MWIyMSIgb3BhY2l0eT0iMC45IiBwb2ludHM9IjAsOTAwIDAsNzQwIDYwLDcwMCAxMjAsNzQ1IDE5MCw2OTAgMjQwLDczMCAzMDAsNzAwIDMwMCw5MDAiIC8+PHBvbHlnb24gZmlsbD0iIzE0MWExNiIgb3BhY2l0eT0iMC45MiIgcG9pbnRzPSItMTAsODYxLjE1IDUuMCw3ODkgMjAsODYxLjE1IiAvPjxwb2x5Z29uIGZpbGw9IiMxNzFmMWEiIG9wYWNpdHk9IjAuOTIiIHBvaW50cz0iLTEzLjYsOTAwIDUuMCw4MzguOTUgMjMuNiw5MDAiIC8+PHBvbHlnb24gZmlsbD0iIzE0MWExNiIgb3BhY2l0eT0iMC45MiIgcG9pbnRzPSIyMCw4NzMuNCAzNC4wLDgyNCA0OCw4NzMuNCIgLz48cG9seWdvbiBmaWxsPSIjMTcxZjFhIiBvcGFjaXR5PSIwLjkyIiBwb2ludHM9IjE2LjY0LDkwMCAzNC4wLDg1OC4yIDUxLjM2LDkwMCIgLz48cG9seWdvbiBmaWxsPSIjMTQxYTE2IiBvcGFjaXR5PSIwLjkyIiBwb2ludHM9IjQxLDg1OS40IDYzLjAsNzg0IDg1LDg1OS40IiAvPjxwb2x5Z29uIGZpbGw9IiMxNzFmMWEiIG9wYWNpdHk9IjAuOTIiIHBvaW50cz0iMzUuNzIsOTAwIDYzLjAsODM2LjIgOTAuMjgsOTAwIiAvPjxwb2x5Z29uIGZpbGw9IiMxNDFhMTYiIG9wYWNpdHk9IjAuOTIiIHBvaW50cz0iNjAsODUzLjEgNzYuMCw3NjYgOTIsODUzLjEiIC8+PHBvbHlnb24gZmlsbD0iIzE3MWYxYSIgb3BhY2l0eT0iMC45MiIgcG9pbnRzPSI1Ni4xNiw5MDAgNzYuMCw4MjYuMyA5NS44NCw5MDAiIC8+PHBvbHlnb24gZmlsbD0iIzE0MWExNiIgb3BhY2l0eT0iMC45MiIgcG9pbnRzPSI3OSw4NzEuNjUgOTguNSw4MTkgMTE4LDg3MS42NSIgLz48cG9seWdvbiBmaWxsPSIjMTcxZjFhIiBvcGFjaXR5PSIwLjkyIiBwb2ludHM9Ijc0LjMyLDkwMCA5OC41LDg1NS40NSAxMjIuNjgsOTAwIiAvPjxwb2x5Z29uIGZpbGw9IiMxNDFhMTYiIG9wYWNpdHk9IjAuOTIiIHBvaW50cz0iMTEwLDg3Mi43IDEyNi41LDgyMiAxNDMsODcyLjciIC8+PHBvbHlnb24gZmlsbD0iIzE3MWYxYSIgb3BhY2l0eT0iMC45MiIgcG9pbnRzPSIxMDYuMDQsOTAwIDEyNi41LDg1Ny4xIDE0Ni45Niw5MDAiIC8+PHBvbHlnb24gZmlsbD0iIzE0MWExNiIgb3BhY2l0eT0iMC45MiIgcG9pbnRzPSIxMzAsODUxLjAgMTQ5LjUsNzYwIDE2OSw4NTEuMCIgLz48cG9seWdvbiBmaWxsPSIjMTcxZjFhIiBvcGFjaXR5PSIwLjkyIiBwb2ludHM9IjEyNS4zMiw5MDAgMTQ5LjUsODIzLjAgMTczLjY4LDkwMCIgLz48cG9seWdvbiBmaWxsPSIjMTQxYTE2IiBvcGFjaXR5PSIwLjkyIiBwb2ludHM9IjE0OSw4NTAuMyAxNjMuNSw3NTggMTc4LDg1MC4zIiAvPjxwb2x5Z29uIGZpbGw9IiMxNzFmMWEiIG9wYWNpdHk9IjAuOTIiIHBvaW50cz0iMTQ1LjUyLDkwMCAxNjMuNSw4MjEuOSAxODEuNDgsOTAwIiAvPjxwb2x5Z29uIGZpbGw9IiMxNDFhMTYiIG9wYWNpdHk9IjAuOTIiIHBvaW50cz0iMTc0LDg0Ny41IDE5Ny4wLDc1MCAyMjAsODQ3LjUiIC8+PHBvbHlnb24gZmlsbD0iIzE3MWYxYSIgb3BhY2l0eT0iMC45MiIgcG9pbnRzPSIxNjguNDgsOTAwIDE5Ny4wLDgxNy41IDIyNS41Miw5MDAiIC8+PHBvbHlnb24gZmlsbD0iIzE0MWExNiIgb3BhY2l0eT0iMC45MiIgcG9pbnRzPSIxOTMsODQ5Ljk1IDIxNS4wLDc1NyAyMzcsODQ5Ljk1IiAvPjxwb2x5Z29uIGZpbGw9IiMxNzFmMWEiIG9wYWNpdHk9IjAuOTIiIHBvaW50cz0iMTg3LjcyLDkwMCAyMTUuMCw4MjEuMzUgMjQyLjI4LDkwMCIgLz48cG9seWdvbiBmaWxsPSIjMTQxYTE2IiBvcGFjaXR5PSIwLjkyIiBwb2ludHM9IjIyMyw4NzMuNCAyMzkuNSw4MjQgMjU2LDg3My40IiAvPjxwb2x5Z29uIGZpbGw9IiMxNzFmMWEiIG9wYWNpdHk9IjAuOTIiIHBvaW50cz0iMjE5LjA0LDkwMCAyMzkuNSw4NTguMiAyNTkuOTYsOTAwIiAvPjxwb2x5Z29uIGZpbGw9IiMxNDFhMTYiIG9wYWNpdHk9IjAuOTIiIHBvaW50cz0iMjQyLDg1MC42NSAyNTcuMCw3NTkgMjcyLDg1MC42NSIgLz48cG9seWdvbiBmaWxsPSIjMTcxZjFhIiBvcGFjaXR5PSIwLjkyIiBwb2ludHM9IjIzOC40LDkwMCAyNTcuMCw4MjIuNDUgMjc1LjYsOTAwIiAvPjxwb2x5Z29uIGZpbGw9IiMxNDFhMTYiIG9wYWNpdHk9IjAuOTIiIHBvaW50cz0iMjY5LDg1Ni45NSAyODQuMCw3NzcgMjk5LDg1Ni45NSIgLz48cG9seWdvbiBmaWxsPSIjMTcxZjFhIiBvcGFjaXR5PSIwLjkyIiBwb2ludHM9IjI2NS40LDkwMCAyODQuMCw4MzIuMzUgMzAyLjYsOTAwIiAvPjxwb2x5Z29uIGZpbGw9IiMxNDFhMTYiIG9wYWNpdHk9IjAuOTIiIHBvaW50cz0iMjkwLDg0OS45NSAzMDcuNSw3NTcgMzI1LDg0OS45NSIgLz48cG9seWdvbiBmaWxsPSIjMTcxZjFhIiBvcGFjaXR5PSIwLjkyIiBwb2ludHM9IjI4NS44LDkwMCAzMDcuNSw4MjEuMzUgMzI5LjIsOTAwIiAvPjwvc3ZnPg=="),
+        url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgOTAwIj48cG9seWdvbiBmaWxsPSIjMjMyYzM2IiBvcGFjaXR5PSIwLjU1IiBwb2ludHM9IjAsOTAwIDAsNTYwIDQwLDUwMCA4NSw1NDUgMTMwLDQ3MCAxNzUsNTIwIDIyMCw0NTUgMjYwLDUwNSAzMDAsNDYwIDMwMCw5MDAiIC8+PHBvbHlnb24gZmlsbD0iIzFiMjAyNyIgb3BhY2l0eT0iMC43NSIgcG9pbnRzPSIwLDkwMCAwLDY1MCA1NSw1ODAgMTAwLDYzMCAxNTAsNTQ1IDIwNSw2MTAgMjU1LDU2NSAzMDAsNjEwIDMwMCw5MDAiIC8+PHBvbHlnb24gZmlsbD0iIzE2MWIyMSIgb3BhY2l0eT0iMC45IiBwb2ludHM9IjAsOTAwIDAsNzQwIDYwLDcwMCAxMjAsNzQ1IDE5MCw2OTAgMjQwLDczMCAzMDAsNzAwIDMwMCw5MDAiIC8+PHBvbHlnb24gZmlsbD0iIzE0MWExNiIgb3BhY2l0eT0iMC45MiIgcG9pbnRzPSItMTAsODYxLjE1IDUuMCw3ODkgMjAsODYxLjE1IiAvPjxwb2x5Z29uIGZpbGw9IiMxNzFmMWEiIG9wYWNpdHk9IjAuOTIiIHBvaW50cz0iLTEzLjYsOTAwIDUuMCw4MzguOTUgMjMuNiw5MDAiIC8+PHBvbHlnb24gZmlsbD0iIzE0MWExNiIgb3BhY2l0eT0iMC45MiIgcG9pbnRzPSIyMCw4NzMuNCAzNC4wLDgyNCA0OCw4NzMuNCIgLz48cG9seWdvbiBmaWxsPSIjMTcxZjFhIiBvcGFjaXR5PSIwLjkyIiBwb2ludHM9IjE2LjY0LDkwMCAzNC4wLDg1OC4yIDUxLjM2LDkwMCIgLz48cG9seWdvbiBmaWxsPSIjMTQxYTE2IiBvcGFjaXR5PSIwLjkyIiBwb2ludHM9IjQxLDg1OS40IDYzLjAsNzg0IDg1LDg1OS40IiAvPjxwb2x5Z29uIGZpbGw9IiMxNzFmMWEiIG9wYWNpdHk9IjAuOTIiIHBvaW50cz0iMzUuNzIsOTAwIDYzLjAsODM2LjIgOTAuMjgsOTAwIiAvPjxwb2x5Z29uIGZpbGw9IiMxNDFhMTYiIG9wYWNpdHk9IjAuOTIiIHBvaW50cz0iNjAsODUzLjEgNzYuMCw3NjYgOTIsODUzLjEiIC8+PHBvbHlnb24gZmlsbD0iIzE3MWYxYSIgb3BhY2l0eT0iMC45MiIgcG9pbnRzPSI1Ni4xNiw5MDAgNzYuMCw4MjYuMyA5NS44NCw5MDAiIC8+PHBvbHlnb24gZmlsbD0iIzE0MWExNiIgb3BhY2l0eT0iMC45MiIgcG9pbnRzPSI3OSw4NzEuNjUgOTguNSw4MTkgMTE4LDg3MS42NSIgLz48cG9seWdvbiBmaWxsPSIjMTcxZjFhIiBvcGFjaXR5PSIwLjkyIiBwb2ludHM9Ijc0LjMyLDkwMCA5OC41LDg1NS40NSAxMjIuNjgsOTAwIiAvPjxwb2x5Z29uIGZpbGw9IiMxNDFhMTYiIG9wYWNpdHk9IjAuOTIiIHBvaW50cz0iMTEwLDg3Mi43IDEyNi41LDgyMiAxNDMsODcyLjciIC8+PHBvbHlnb24gZmlsbD0iIzE3MWYxYSIgb3BhY2l0eT0iMC45MiIgcG9pbnRzPSIxMDYuMDQsOTAwIDEyNi41LDg1Ny4xIDE0Ni45Niw5MDAiIC8+PHBvbHlnb24gZmlsbD0iIzE0MWExNiIgb3BhY2l0eT0iMC45MiIgcG9pbnRzPSIxMzAsODUxLjAgMTQ5LjUsNzYwIDE2OSw4NTEuMCIgLz48cG9seWdvbiBmaWxsPSIjMTcxZjFhIiBvcGFjaXR5PSIwLjkyIiBwb2ludHM9IjEyNS4zMiw5MDAgMTQ5LjUsODIzLjAgMTczLjY4LDkwMCIgLz48cG9seWdvbiBmaWxsPSIjMTQxYTE2IiBvcGFjaXR5PSIwLjkyIiBwb2ludHM9IjE0OSw4NTAuMyAxNjMuNSw3NTggMTc4LDg1MC4zIiAvPjxwb2x5Z29uIGZpbGw9IiMxNzFmMWEiIG9wYWNpdHk9IjAuOTIiIHBvaW50cz0iMTQ1LjUyLDkwMCAxNjMuNSw4MjEuOSAxODEuNDgsOTAwIiAvPjxwb2x5Z29uIGZpbGw9IiMxNDFhMTYiIG9wYWNpdHk9IjAuOTIiIHBvaW50cz0iMTc0LDg0Ny41IDE5Ny4wLDc1MCAyMjAsODQ3LjUiIC8+PHBvbHlnb24gZmlsbD0iIzE3MWYxYSIgb3BhY2l0eT0iMC45MiIgcG9pbnRzPSIxNjguNDgsOTAwIDE5Ny4wLDgxNy41IDIyNS41Miw5MDAiIC8+PHBvbHlnb24gZmlsbD0iIzE0MWExNiIgb3BhY2l0eT0iMC45MiIgcG9pbnRzPSIxOTMsODQ5Ljk1IDIxNS4wLDc1NyAyMzcsODQ5Ljk1IiAvPjxwb2x5Z29uIGZpbGw9IiMxNzFmMWEiIG9wYWNpdHk9IjAuOTIiIHBvaW50cz0iMTg3LjcyLDkwMCAyMTUuMCw4MjEuMzUgMjQyLjI4LDkwMCIgLz48cG9seWdvbiBmaWxsPSIjMTQxYTE2IiBvcGFjaXR5PSIwLjkyIiBwb2ludHM9IjIyMyw4NzMuNCAyMzkuNSw4MjQgMjU2LDg3My40IiAvPjxwb2x5Z29uIGZpbGw9IiMxNzFmMWEiIG9wYWNpdHk9IjAuOTIiIHBvaW50cz0iMjE5LjA0LDkwMCAyMzkuNSw4NTguMiAyNTkuOTYsOTAwIiAvPjxwb2x5Z29uIGZpbGw9IiMxNDFhMTYiIG9wYWNpdHk9IjAuOTIiIHBvaW50cz0iMjQyLDg1MC42NSAyNTcuMCw3NTkgMjcyLDg1MC42NSIgLz48cG9seWdvbiBmaWxsPSIjMTcxZjFhIiBvcGFjaXR5PSIwLjkyIiBwb2ludHM9IjIzOC40LDkwMCAyNTcuMCw4MjIuNDUgMjc1LjYsOTAwIiAvPjxwb2x5Z29uIGZpbGw9IiMxNDFhMTYiIG9wYWNpdHk9IjAuOTIiIHBvaW50cz0iMjY5LDg1Ni45NSAyODQuMCw3NzcgMjk5LDg1Ni45NSIgLz48cG9seWdvbiBmaWxsPSIjMTcxZjFhIiBvcGFjaXR5PSIwLjkyIiBwb2ludHM9IjI2NS40LDkwMCAyODQuMCw4MzIuMzUgMzAyLjYsOTAwIiAvPjxwb2x5Z29uIGZpbGw9IiMxNDFhMTYiIG9wYWNpdHk9IjAuOTIiIHBvaW50cz0iMjkwLDg0OS45NSAzMDcuNSw3NTcgMzI1LDg0OS45NSIgLz48cG9seWdvbiBmaWxsPSIjMTcxZjFhIiBvcGFjaXR5PSIwLjkyIiBwb2ludHM9IjI4NS44LDkwMCAzMDcuNSw4MjEuMzUgMzI5LjIsOTAwIiAvPjwvc3ZnPg==");
+      background-size: 34px 34px, 34px 34px, 320px auto, 320px auto;
+      background-position: 0 0, 0 0, left bottom, right bottom;
+      background-repeat: repeat, repeat, no-repeat, no-repeat;
+      background-attachment: fixed, fixed, fixed, fixed;
+    }
   }
 
   a{ color: var(--accent); }
@@ -416,6 +445,29 @@
     min-height: 16px;
   }
   .submit-note.shown{ color: var(--accent); }
+  .submit-note.error{ color: var(--danger); }
+
+  .btn-secondary{
+    width: 100%;
+    background: transparent;
+    color: var(--text-dim);
+    font-family: var(--mono);
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+    padding: 12px;
+    border: 1px solid var(--line);
+    border-radius: 2px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    transition: border-color .15s ease, color .15s ease;
+  }
+  .btn-secondary:hover{ border-color: var(--accent); color: var(--accent-ink); }
+
+  .field-invalid{ border-color: var(--danger) !important; }
 
   footer{
     text-align:center;
@@ -944,8 +996,9 @@
       </div>
 
       <div class="field">
-        <div class="field-row"><label class="title" for="contact">Ім'я та контакт</label></div>
+        <div class="field-row"><label class="title" for="contact">Ім'я та контакт *</label></div>
         <input type="text" id="contact" placeholder="Ім'я, телефон або месенджер">
+        <div class="hint">Обов'язково для зв'язку — без цього ми не зможемо відповісти на заявку.</div>
       </div>
     </section>
 
@@ -961,13 +1014,14 @@
       <div class="summary-body" id="summaryBody"></div>
       <div class="summary-foot">
         <button type="button" class="btn-submit" id="submitBtn">Надіслати заявку</button>
+        <button type="button" class="btn-secondary" id="callBtn">📞 Подзвонити майстру</button>
         <p class="submit-note" id="submitNote"></p>
       </div>
     </div>
   </div>
 </div>
 
-<footer>Заявка зберігається локально в браузері та передається майстерні. Нічого не надсилається без натискання кнопки.</footer>
+<footer>Заявка копіюється в буфер обміну й відкриває Telegram майстра, а також зберігається локально в браузері. Нічого не відправляється без натискання кнопки.</footer>
 
 <script>
 (function(){
@@ -1332,8 +1386,8 @@
   }
 
   /* ---------------- summary rendering ---------------- */
-  function renderSummary(s, total){
-    const groups = [
+  function buildSummaryGroups(s){
+    return [
       {
         title: 'Рама і підвіска',
         rows: [
@@ -1410,7 +1464,10 @@
         ]
       }
     ];
+  }
 
+  function renderSummary(s, total){
+    const groups = buildSummaryGroups(s);
     const html = groups.map(g=>{
       const rows = g.rows.map(r=>'<div class="summary-row"><span>'+r[0]+'</span><span>'+r[1]+'</span></div>').join('');
       return '<div class="summary-group"><h3>'+g.title+'</h3>'+rows+'</div>';
@@ -1451,7 +1508,82 @@
   }
 
   /* ---------------- submit ---------------- */
+  // Тримайте ці значення синхронними з CONFIG у chatbot.js
+  const ORDER_CONFIG = {
+    telegramOrderLink: "https://t.me/+SpzKmo1Z16syNmIy",
+    phone: "+380631446701"
+  };
+
+  /* plain-text версія кошторису, використовується для email/Telegram */
+  function buildOrderText(s, total){
+    const groups = buildSummaryGroups(s);
+    const lines = [];
+    lines.push('Заявка на збірку велосипеда — Dimario Bike Master');
+    lines.push("Ім'я/контакт: " + (s.budget.contact || '-'));
+    lines.push('Бюджет клієнта: ' + (s.budget.amount ? fmt(s.budget.amount) + ' ₴' : '-'));
+    lines.push('Розрахункова ціна збірки: ' + fmt(total) + ' ₴');
+    lines.push('');
+    groups.forEach(g=>{
+      lines.push(g.title + ':');
+      g.rows.forEach(r=>{
+        lines.push('  ' + r[0] + ': ' + r[1]);
+      });
+      lines.push('');
+    });
+    if(s.budget.wishes){
+      lines.push('Побажання: ' + s.budget.wishes);
+    }
+    return lines.join('\n').trim();
+  }
+
+  function copyToClipboard(text){
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      return navigator.clipboard.writeText(text).catch(()=>{ fallbackCopy(text); });
+    }
+    fallbackCopy(text);
+    return Promise.resolve();
+  }
+
+  function fallbackCopy(text){
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    try{ document.execCommand('copy'); }catch(e){}
+    document.body.removeChild(ta);
+  }
+
+  /* ---------------- автоматична доставка заявки (Telegram + дзвінок) ---------------- */
+  const contactInput = $('contact');
+  const note = $('submitNote');
+
+  function showNote(text, kind){
+    note.textContent = text;
+    note.classList.remove('shown', 'error');
+    note.classList.add(kind === 'error' ? 'error' : 'shown');
+  }
+
+  function validateContact(){
+    const filled = contactInput.value.trim().length > 0;
+    contactInput.classList.toggle('field-invalid', !filled);
+    return filled;
+  }
+
+  contactInput.addEventListener('input', ()=>{
+    if(contactInput.value.trim().length > 0){
+      contactInput.classList.remove('field-invalid');
+    }
+  });
+
   $('submitBtn').addEventListener('click', function(){
+    if(!validateContact()){
+      showNote("Вкажіть ім'я та контакт — інакше ми не зможемо зв'язатися з вами.", 'error');
+      contactInput.focus();
+      return;
+    }
+
     const s = readState();
     const total = computePrice(s);
     const order = {
@@ -1462,6 +1594,7 @@
       budgetStatus: !s.budget.amount ? 'unknown' : (total > s.budget.amount ? 'over' : (total >= s.budget.amount*0.9 ? 'tight' : 'ok'))
     };
 
+    // зберігаємо локальну копію заявки (резерв/історія на цьому пристрої)
     try{
       const key = 'bikeConfiguratorOrders';
       const existing = JSON.parse(localStorage.getItem(key) || '[]');
@@ -1471,14 +1604,25 @@
       console.error('Не вдалося зберегти заявку в localStorage', e);
     }
 
-    // Заглушка для реальної відправки на сервер:
-    // fetch('/api/orders', { method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify(order) });
     console.log('Нова заявка на кастомний велосипед:', order);
 
-    const note = $('submitNote');
-    note.textContent = 'Заявку збережено. Ми зв\'яжемося з вами за вказаним контактом.';
-    note.classList.add('shown');
-    setTimeout(()=>{ note.classList.remove('shown'); note.textContent=''; }, 6000);
+    // формуємо читабельний текст заявки, копіюємо його в буфер обміну
+    // і одразу відкриваємо Telegram майстра для швидкого зв'язку.
+    const orderText = buildOrderText(s, total);
+    copyToClipboard(orderText).then(()=>{
+      window.open(ORDER_CONFIG.telegramOrderLink, '_blank', 'noopener');
+      showNote('Заявку збережено, текст скопійовано в буфер обміну. Вставте його (Ctrl+V) у Telegram, що відкрився, і надішліть.', 'ok');
+      setTimeout(()=>{
+        if(!note.classList.contains('error')){
+          note.classList.remove('shown');
+          note.textContent = '';
+        }
+      }, 9000);
+    });
+  });
+
+  $('callBtn').addEventListener('click', function(){
+    window.location.href = 'tel:' + ORDER_CONFIG.phone;
   });
 
   /* ---------------- init ---------------- */
