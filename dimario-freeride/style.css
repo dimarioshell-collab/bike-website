@@ -102,26 +102,18 @@ button {
 }
 
 /* ============================================================
-   РЕАЛЬНІ ФОТО замість фону сайту.
-   1) body::before -- суцільне фонове фото на весь екран (fixed),
-      сильно затемнене через filter (це НЕ градієнт-накладка -- сама
-      фотографія просто прибрана по яскравості, як у нічному режимі
-      камери), щоб текст поза картками (hero-лівий блок, заголовки
-      секцій, футер) читався на будь-якому фото. Фото лишається добре
-      видимим -- це не суцільна чорна заглушка.
-   2) body { background-image: ... } -- чіткі, майже незатемнені фото
-      по чотирьох кутах сторінки (за межами контейнера 1240px).
-      Вони фізично не можуть перекрити контент: контейнер
-      центрований, і за його межами тексту й кнопок немає.
-      На екранах вужчих за 1500px для цих кутових смуг просто немає
-      вільного поля без накладання на контент -- тому там лишається
-      тільки п.1 (затемнене фото-тло), без бокових смуг.
+   РЕАЛЬНІ ФОТО фону сайту — два власних завантажених файли,
+   без жодних зовнішніх посилань (Unsplash/Pixabay), без діаграм,
+   градієнтів чи SVG.
 
-   ЗАМІНИТИ: посилання нижче -- тимчасові хотлінки на Unsplash/Pixabay
-   (Unsplash License / Pixabay Content License -- вільне використання).
-   Для продакшну рекомендую завантажити ці фото собі в
-   /images/backgrounds/ і замінити URL на локальні шляхи -- так сайт
-   не буде залежати від сторонніх CDN.
+   backgrounds/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg
+     -> основний фон сайту (body::before) і фон конструктора
+        (constructor.html), той самий файл в обох місцях.
+
+   backgrounds/peter-robbins-4LIqxcyPqvc-unsplash.jpg
+     -> лише два локальних акценти, теж тільки як фон:
+        .hero-grid-lines (легке світіння за фото в hero)
+        .contact-right-bg (панель позаду картки в секції "Контакти")
    ============================================================ */
 
 body::before {
@@ -129,38 +121,17 @@ body::before {
   position: fixed;
   inset: 0;
   z-index: -2;
-  background-image: url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?fm=jpg&q=80&w=1920&auto=format&fit=crop");
+  background-image: url("images/backgrounds/kalen-emsley-Bkci_8qcdvQ-unsplasапапапh.jpg");
   /* Фото: сніжні гори + лісова долина (Kalen Emsley, Unsplash) */
   background-size: cover;
   background-position: center 35%;
   background-repeat: no-repeat;
-  filter: brightness(0.24) saturate(0.85) contrast(1.05);
+  filter: brightness(0.28) saturate(0.9) contrast(1.05);
 }
 
 body {
   background-color: var(--bg);
-  background-image:
-    url("https://images.unsplash.com/photo-1760462568737-d23554934a4d?fm=jpg&q=80&w=900&auto=format&fit=crop"),
-    url("https://images.unsplash.com/photo-1630500014159-c95ac353e4d9?fm=jpg&q=80&w=900&auto=format&fit=crop"),
-    url("https://images.unsplash.com/photo-1780004189175-202169141544?fm=jpg&q=80&w=900&auto=format&fit=crop"),
-    url("https://cdn.pixabay.com/photo/2021/09/26/16/42/mountain-bike-6658312_1280.jpg");
-  /* top-left: байкери на лісовій downhill-трасі (Unsplash)
-     bottom-left: гірський байк у лісі (Unsplash)
-     top-right: байк на тлі гір на заході сонця (Unsplash)
-     bottom-right: downhill-стрибок, Saalbach-Hinterglemm (Pixabay) */
-  background-size: 300px auto, 300px auto, 300px auto, 300px auto;
-  background-position: left top, left bottom, right top, right bottom;
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-attachment: fixed, fixed, fixed, fixed;
-}
-
-/* На екранах <=1500px контейнеру (1240px) вже не лишається бокових полів --
-   прибираємо кутові фото-смуги, щоб вони фізично не могли лягти на контент.
-   Затемнене фото з body::before лишається видимим завжди. */
-@media (max-width: 1500px) {
-  body {
-    background-image: none;
-  }
+  background-image: none;
 }
 
 .accent { color: var(--accent); }
@@ -636,17 +607,14 @@ section {
   height: 781px;
 }
 
-/* Was a hard blueprint grid — now a soft misty glow behind the hero photo,
-   closer to fog drifting over a mountain trail than a calibration sheet. */
+/* Soft glow behind the hero photo — the second real photo, only as background */
 .hero-grid-lines {
   position: absolute;
   inset: -20px;
-  background-image: url("https://images.unsplash.com/photo-1780004189175-202169141544?fm=jpg&q=70&w=900&auto=format&fit=crop");
-  /* ЗАМІНИТИ: байк на тлі гір на заході сонця (Unsplash) --
-     видно лише вузькою смужкою навколо .hero-photo-placeholder */
+  background-image: url("./backgrounds/peter-robbins-4LIqxcyPqvc-unsplash.jpg");
   background-size: cover;
-  background-position: center;
-  filter: brightness(0.5) blur(1px);
+  background-position: center 40%;
+  filter: brightness(0.45) blur(1px);
   opacity: 0.9;
   z-index: 0;
 }
@@ -686,6 +654,10 @@ section {
      Фон .hero-photo-placeholder (var(--bg-panel)) закриває поля по боках/зверху-знизу,
      якщо пропорції рамки і фото не збігаються. */
   object-fit: contain;
+  background-image: url("images/backgrounds/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;    /* не повторяется */
 }
 .hero-overlay-text {
   position: absolute;
@@ -1551,16 +1523,19 @@ section {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   overflow: hidden;
+  background-image: url("images/backgrounds/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;    /* не повторяется */
 }
 
 .contact-right-bg::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("https://cdn.pixabay.com/photo/2024/04/13/13/26/cycling-8693889_1280.jpg");
-  /* ЗАМІНИТИ: фото MTB-траси в лісі (Pixabay, cyclist forest trail) */
+  background-image: url("images/backgrounds/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center 40%;
   filter: brightness(0.4) saturate(0.9);
 }
 
