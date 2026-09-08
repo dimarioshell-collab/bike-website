@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initNavbarScroll();
   initFadeUp();
   initVideoPlayer();
+  initMobileMenu();
 });
 
 /* ---------- 1) custom cursor ---------- */
@@ -128,5 +129,45 @@ function initVideoPlayer() {
 
   video.addEventListener('ended', () => {
     playBtn.classList.remove('is-hidden');
+  });
+}
+
+/* ---------- 5) mobile hamburger menu ---------- */
+function initMobileMenu() {
+  const burger = document.getElementById('navBurger');
+  const links = document.getElementById('navLinks');
+  const overlay = document.getElementById('navOverlay');
+  if (!burger || !links || !overlay) return;
+
+  const closeMenu = () => {
+    burger.classList.remove('is-open');
+    links.classList.remove('is-open');
+    overlay.classList.remove('is-open');
+    burger.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  };
+
+  const openMenu = () => {
+    burger.classList.add('is-open');
+    links.classList.add('is-open');
+    overlay.classList.add('is-open');
+    burger.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  };
+
+  burger.addEventListener('click', () => {
+    if (links.classList.contains('is-open')) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  });
+
+  overlay.addEventListener('click', closeMenu);
+  links.querySelectorAll('a').forEach((a) => a.addEventListener('click', closeMenu));
+
+  // закрити меню, якщо екран стало ширшим за мобільний брейкпоінт
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 860) closeMenu();
   });
 }
