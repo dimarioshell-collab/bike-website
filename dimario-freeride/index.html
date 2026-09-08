@@ -3,10 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0e1116" />
+    <meta name="color-scheme" content="dark" />
     <title>
       Дистанційна збірка гірських велосипедів онлайн | MTB, Downhill,
       Freeride, ремонт — Dimario Bike Master
     </title>
+
+    <!-- Favicon & PWA icons -->
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
 
     <!-- ============================================================
        SEO: meta description, keywords, canonical
@@ -26,8 +34,8 @@
     <meta name="language" content="Ukrainian" />
     <link
       rel="canonical"
-      href="https://dimarioshell-collab.github.io/bike-website/"
-        />
+      href="https://dimario.online/"
+    />
 
     <!-- ============================================================
        SEO: Open Graph (Telegram, Instagram, Facebook превью)
@@ -42,11 +50,14 @@
     />
     <meta
       property="og:image"
-      content="https://dimarioshell-collab.github.io/bike-website/images/Me%20Kona.jpg"
+      content="https://dimario.online/images/Me%20Kona.jpg"
     />
+    <meta property="og:image:width" content="700" />
+    <meta property="og:image:height" content="1190" />
+    <meta property="og:image:alt" content="Dimario Bike Master — авторська збірка MTB" />
     <meta
       property="og:url"
-      content="https://dimarioshell-collab.github.io/bike-website/"
+      content="https://dimario.online/"
     />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="uk_UA" />
@@ -66,12 +77,14 @@
     />
     <meta
       name="twitter:image"
-      content="https://dimarioshell-collab.github.io/bike-website/images/Me%20Kona.jpg"
+      content="https://dimario.online/images/Me%20Kona.jpg"
     />
 
     <!-- ============================================================
        ШРИФТИ (Google Fonts) — можна змінити за бажанням
        ============================================================ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@300;400;500;600;700&family=Space+Mono:ital@0;1&display=swap"
       rel="stylesheet"
@@ -85,12 +98,12 @@
       {
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
-        "@id": "https://dimarioshell-collab.github.io/bike-website/#business",
+        "@id": "https://dimario.online/#business",
         "name": "Dimario Bike Master",
         "alternateName": ["DIMARIO BIKE", "Dimario Bike Master — гірські велосипеди"],
         "description": "Дистанційна авторська збірка гірських велосипедів (MTB, Enduro, Downhill, Freeride) онлайн. Двохпідвіси, підбір компонентів, ремонт і апгрейд байків, онлайн-консультації веломеханіка по всій Україні.",
-        "url": "https://dimarioshell-collab.github.io/bike-website/",
-        "image": "https://dimarioshell-collab.github.io/bike-website/images/Me%20Kona.jpg",
+        "url": "https://dimario.online/",
+        "image": "https://dimario.online/images/Me%20Kona.jpg",
         "knowsAbout": [
           "Mountain bike",
           "MTB",
@@ -253,40 +266,49 @@
             "@type": "ListItem",
             "position": 1,
             "name": "Головна",
-            "item": "https://dimarioshell-collab.github.io/bike-website/"
+            "item": "https://dimario.online/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Послуги",
-            "item": "https://dimarioshell-collab.github.io/bike-website/#services"
+            "item": "https://dimario.online/#services"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "Про мене",
-            "item": "https://dimarioshell-collab.github.io/bike-website/#about"
+            "item": "https://dimario.online/#about"
           },
           {
             "@type": "ListItem",
             "position": 4,
             "name": "Роботи",
-            "item": "https://dimarioshell-collab.github.io/bike-website/#works"
+            "item": "https://dimario.online/#works"
           },
           {
             "@type": "ListItem",
             "position": 5,
             "name": "Процес",
-            "item": "https://dimarioshell-collab.github.io/bike-website/#process"
+            "item": "https://dimario.online/#process"
           },
           {
             "@type": "ListItem",
             "position": 6,
             "name": "Ціни",
-            "item": "https://dimarioshell-collab.github.io/bike-website/#pricing"
+            "item": "https://dimario.online/#pricing"
           }
         ]
       }
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XRMBM4Q60F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XRMBM4Q60F');
     </script>
   </head>
   <body>
@@ -403,7 +425,9 @@
         <div class="hero-grid-lines"></div>
         <div class="hero-accent-bar"></div>
         <div class="hero-photo-placeholder">
-          <img
+          <picture>
+            <source srcset="images/Me Kona.webp" type="image/webp" />
+            <img
             class="hero-image"
             src="images/Me Kona.jpg"
             alt="Авторська збірка велосипеда Dimario Bike Master"
@@ -411,6 +435,7 @@
             height="1190"
             loading="eager"
           />
+          </picture>
         </div>
         <div class="hero-overlay-text">BIKE</div>
       </div>
@@ -597,7 +622,9 @@
     <section class="about" id="about">
       <div class="about-visual fade-up">
         <div class="about-corner"></div>
-        <img
+        <picture>
+          <source srcset="images/me dirt .webp" type="image/webp" />
+          <img
           src="images/me dirt .jpg"
           alt="Дмитро, сертифікований веломеханік Dimario Bike Master"
           class="about-photo"
@@ -605,6 +632,7 @@
           height="1011"
           loading="lazy"
         />
+        </picture>
       </div>
 
       <div class="about-content fade-up">
@@ -645,7 +673,9 @@
             <span>Велопланета · Курси веломеханіка - Veliki.ua</span>
             <div class="cert-img">
               <div class="cert-img__wrapper">
-                <img
+                <picture>
+                  <source srcset="images/BikePlanet.webp" type="image/webp" />
+                  <img
                   src="images/BikePlanet.jpg"
                   alt="Сертифікат курсів веломеханіка Велопланета"
                   width="635"
@@ -653,9 +683,12 @@
                   loading="lazy"
                   class="js-zoomable"
                 />
+                </picture>
               </div>
               <div class="cert-img__wrapper">
-                <img
+                <picture>
+                  <source srcset="images/Veliki.ua.webp" type="image/webp" />
+                  <img
                   class="cert-img__veliki js-zoomable"
                   src="images/Veliki.ua.jpg"
                   alt="Сертифікат курсів веломеханіка Veliki.ua"
@@ -663,6 +696,7 @@
                   height="1027"
                   loading="lazy"
                 />
+                </picture>
               </div>
             </div>
           </div>
@@ -694,6 +728,7 @@
               id="myVideo"
               src="images/Spesialized big hit.mp4"
               preload="metadata"
+              playsinline
               title="MTB downhill збірка Specialized Big Hit 3, SRAM X4, 27.5 дюймів"
               aria-label="Відео авторської збірки MTB Specialized Big Hit"
             ></video>
@@ -712,14 +747,17 @@
         <!-- КАРТКА 2 -->
         <div class="work-card fade-up">
           <div class="work-img-placeholder">
-            <img
+            <picture>
+              <source srcset="images/Magellan.webp" type="image/webp" />
+              <img
               src="images/Magellan.jpg"
               alt="Збірка велосипеда City Adventure Magellan"
               class="work-img"
-              width="4608"
-              height="3456"
+              width="1600"
+              height="1200"
               loading="lazy"
             />
+            </picture>
             <h4>City Adventure</h4>
           </div>
           <div class="work-overlay">
@@ -733,7 +771,9 @@
         <!-- КАРТКА 3 -->
         <div class="work-card fade-up">
           <div class="work-img-placeholder">
-            <img
+            <picture>
+              <source srcset="images/Kona Supreame.webp" type="image/webp" />
+              <img
               src="images/Kona Supreame.jpg"
               alt="MTB Freeride збірка Kona SRAM X4 Marzocchi"
               class="work-img img-kona"
@@ -741,6 +781,7 @@
               height="1200"
               loading="lazy"
             />
+            </picture>
             <span>Extreme style</span>
           </div>
           <div class="work-overlay">
@@ -755,7 +796,9 @@
 
         <div class="work-card fade-up">
           <div class="work-img-placeholder">
-            <img
+            <picture>
+              <source srcset="images/Fatbike.webp" type="image/webp" />
+              <img
               src="images/Fatbike.jpg"
               alt="Fatbike Hardtail збірка Acera 8sp"
               class="work-img img-fat"
@@ -763,6 +806,7 @@
               height="800"
               loading="lazy"
             />
+            </picture>
             <span>Mtb Hardtail</span>
           </div>
           <div class="work-overlay">
