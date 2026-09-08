@@ -3,21 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0e1116">
+<meta name="color-scheme" content="dark">
 <title>Конструктор велосипеда на замовлення — Dimario Bike Master</title>
 <meta name="description" content="Онлайн-конструктор велосипеда під замовлення: оберіть раму, колеса, трансмісію, гальма й колір, миттєво побачте кошторис і надішліть заявку майстру Dimario Bike Master.">
 <meta name="keywords" content="конструктор велосипеда, збірка велосипеда під замовлення, кастомний велосипед, підбір компонентів велосипеда, Dimario Bike Master">
 <meta name="robots" content="index, follow">
 <meta name="author" content="Dimario Bike Master">
-<link rel="canonical" href="https://dimarioshell-collab.github.io/bike-website/constructor.html">
+<link rel="canonical" href="https://dimario.online/constructor.html">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
 <meta property="og:title" content="Конструктор велосипеда на замовлення — Dimario Bike Master">
 <meta property="og:description" content="Зберіть велосипед вузол за вузлом і надішліть заявку майстру: рама, колеса, трансмісія, гальма, кермо, сідло, колір.">
-<meta property="og:image" content="https://dimarioshell-collab.github.io/bike-website/images/Me%20Kona.jpg">
-<meta property="og:url" content="https://dimarioshell-collab.github.io/bike-website/constructor.html">
+<meta property="og:image" content="https://dimario.online/images/Me%20Kona.jpg">
+<meta property="og:url" content="https://dimario.online/constructor.html">
 <meta property="og:type" content="website">
+<meta property="og:locale" content="uk_UA">
+<meta property="og:site_name" content="Dimario Bike Master">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Конструктор велосипеда на замовлення — Dimario Bike Master">
 <meta name="twitter:description" content="Зберіть велосипед вузол за вузлом і надішліть заявку майстру.">
-<meta name="twitter:image" content="https://dimarioshell-collab.github.io/bike-website/images/Me%20Kona.jpg">
+<meta name="twitter:image" content="https://dimario.online/images/Me%20Kona.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="chatbot.css">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&family=Space+Mono&display=swap');
@@ -73,7 +83,10 @@
     position: fixed;
     inset: 0;
     z-index: -2;
-    background-image: url("images/backgrounds/peter-robbins-4LIqxcyPqvc-unsplash.jpg");
+    background-image: image-set(
+      url("images/backgrounds/peter-robbins-4LIqxcyPqvc-unsplash.webp") type("image/webp"),
+      url("images/backgrounds/peter-robbins-4LIqxcyPqvc-unsplash.jpg") type("image/jpeg")
+    );
     background-size: cover;
     background-position: center 30%;
     background-repeat: no-repeat;
