@@ -1645,3 +1645,94 @@ button:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
 }
+
+/* ---------- FAQ ---------- */
+.faq {
+  padding: 80px 24px;
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.faq-item {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 0;
+  overflow: hidden;
+  transition: border-color 0.2s var(--ease);
+}
+
+.faq-item[open] {
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 18px 22px;
+  font-family: var(--f-body);
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  font-family: var(--f-mono);
+  font-size: 20px;
+  color: var(--accent);
+  flex-shrink: 0;
+  transition: transform 0.2s var(--ease);
+}
+
+.faq-item[open] summary::after {
+  content: "−";
+}
+
+.faq-item p {
+  padding: 0 22px 20px;
+  margin: 0;
+  color: var(--text-dim);
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+/* Extra hero paragraph */
+.hero-desc--extra {
+  margin-top: 12px;
+  opacity: 0.9;
+  font-size: 0.95em;
+}
+
+/* Work card detail text */
+.work-detail {
+  margin: 8px 0 0;
+  font-size: 13px;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 36ch;
+}
+
+@media (max-width: 768px) {
+  .faq {
+    padding: 56px 16px;
+  }
+  .work-detail {
+    font-size: 12px;
+  }
+}
